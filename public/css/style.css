@@ -10264,3 +10264,9 @@ textarea.form-control {
     margin-bottom: 24px;
   }
 }
+
+.popover {
+  margin-top: -5px;
+  margin-left: 15%;
+  min-width: 70%;
+}
