@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -23,15 +24,15 @@ const Footer = () => {
               <h2 className="ftco-heading-2">Links</h2>
               <div className="d-flex">
                 <ul className="list-unstyled mr-md-4">
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Project</a></li>
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Services</a></li>
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Blog Posts</a></li>
+                  <li><Link to="projects"><span className="fa fa-chevron-right mr-2"></span>Project</Link></li>
+                  <li><Link to="about-us"><span className="fa fa-chevron-right mr-2"></span>About Us</Link></li>
+                  <li><Link to="services"><span className="fa fa-chevron-right mr-2"></span>Services</Link></li>
+                  <li><Link to="blogs"><span className="fa fa-chevron-right mr-2"></span>Blog Posts</Link></li>
                 </ul>
                 <ul className="list-unstyled ml-md-5">
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Clients</a></li>
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                  <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Career</a></li>
+                  <li><Link to="clients"><span className="fa fa-chevron-right mr-2"></span>Clients</Link></li>
+                  <li><Link to="contact-us"><span className="fa fa-chevron-right mr-2"></span>Contact</Link></li>
+                  <li><Link to="career"><span className="fa fa-chevron-right mr-2"></span>Career</Link></li>
 
                 </ul>
               </div>

@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import AboutUs from "./pages/AboutUs";
@@ -11,7 +11,7 @@ import ContactUs from "./pages/ContactUs";
 
 import App from "./App";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,  // Your App component that includes the Header and Outlet

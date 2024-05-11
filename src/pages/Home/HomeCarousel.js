@@ -23,7 +23,9 @@ const HomeCarousel = () => {
       ];
       const [currentIndex, setCurrentIndex] = useState(0);
       useEffect(() => {
+        if(document &&  document.getElementById('ftco-loader')){
         document.getElementById('ftco-loader').style.display='none'
+        }
         const intervalId = setInterval(() => {
           setCurrentIndex(current => (current + 1) % images.length);
         }, 5000); // Change image every 5000 ms (5 seconds)

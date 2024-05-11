@@ -23,6 +23,7 @@ import HomeCounter from './HomeCounter';
 import HomeProjects from './HomeProjects';
 import HomeTestimonials from './HomeTestimonials';
 import HomeBlogs from './HomeBlogs';
+import HomeClients from './HomeClients';
 
 
 const Home = () => {
@@ -38,6 +39,7 @@ const Home = () => {
         <HomeProjects/>
         <HomeTestimonials/>
         <HomeBlogs/>
+        <HomeClients/>
     </div>
   );
 };

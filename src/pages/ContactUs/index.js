@@ -22,7 +22,15 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <section className="ftco-section bg-light">
+    <div className="container">
+      <div className="row justify-content-center mb-5 pb-2">
+        <div className="col-md-8 text-center heading-section">
+          <span className="subheading">Contact</span>
+          <h2 className="mb-4">Contact Us</h2>
+        </div>
+      </div>
+    <div className="container mt-5 mb-5">
       <div className="row">
         <div className="col-md-6">
           <div id="map-container">
@@ -80,6 +88,8 @@ const ContactUs = () => {
         </div>
       </div>
     </div>
+    </div>
+    </section>
   );
 };
 

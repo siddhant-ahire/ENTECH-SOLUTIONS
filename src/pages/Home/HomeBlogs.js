@@ -32,9 +32,9 @@ const HomeBlogs = () => {
       ];
   return (
     <>
-        <section className="ftco-section bg-light">
+        <section className="ftco-section bg-light pb-0">
       <div className="container">
-        <div className="row justify-content-center mb-5 pb-3">
+        <div className="row justify-content-center pb-3">
           <div className="col-md-10 heading-section text-center">
             <span className="subheading">Our Blog</span>
             <h2 className="mb-4">Latest Blog Updates</h2>

@@ -86,20 +86,26 @@ const Header = () => {
         const handleResize = () => {
           setIsLargeScreen(window.innerWidth > 991.98);
         };
-        document.getElementById('ftco-loader').style.display='none'    
-        document.addEventListener("click", handleClickOutside, true);
+        if(document &&  document.getElementById('ftco-loader')){
+            document.getElementById('ftco-loader').style.display='none'    
+            document.addEventListener("click", handleClickOutside, true);
+        }
 
         window.addEventListener('resize', handleResize);
         return () =>{
+        if(document &&  document.getElementById('ftco-loader')){
           window.removeEventListener('resize', handleResize);
           document.removeEventListener("click", handleClickOutside, true);
-
+        }
         } 
         
       }, []); // Empty dependency array means this effect runs only once after the initial render
     
       useEffect(() => {
         setOpenMenu(false)
+        if(window){
+            window.scrollTo(0, 0);
+        }
       }, [location])
   return (
     <>

@@ -34,8 +34,15 @@ const CareerForm = () => {
   };
 
   return (
-    <div className="container mt-5 mb-5">
-      <h1>Apply for a Position</h1>
+    <>
+    <section className="ftco-section bg-light">
+    <div className="container">
+      <div className="row justify-content-center mb-5 pb-3">
+        <div className="col-md-10 heading-section text-center">
+          <span className="subheading">Career</span>
+          <h2 className="mb-4">Apply for a Position</h2>
+        </div>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>
@@ -105,6 +112,8 @@ const CareerForm = () => {
         <button type="submit" className="btn btn-primary">Submit Application</button>
       </form>
     </div>
+  </section>
+  </>
   );
 };
 
