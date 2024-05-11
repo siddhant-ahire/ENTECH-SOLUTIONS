@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --websitetheme: #1459a2;
+  --websitetheme: #15745B;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -10246,3 +10246,27 @@ textarea.form-control {
   .modal-content .modal-footer {
     border: none;
     background: #f8f8f8; }
+
+@media (max-width: 991.98px) {  /* Adjusts the breakpoint as needed, 576px is Bootstrap’s default for small devices */
+  .mobile-second-header{
+    padding-bottom: 0 !important;
+  }
+  .mobile-second-header > .container{
+    margin-bottom: 24px !important;
+  }
+}
+
+@media (max-width: 991.98px) {  /* Adjusts the breakpoint as needed, 576px is Bootstrap’s default for small devices */
+  .mobile-highlight-points{
+    margin-top: 50px;
+  }
+  .mobile-highlight-points div{
+    margin-bottom: 24px;
+  }
+}
+
+.popover {
+  margin-top: -5px;
+  margin-left: 15%;
+  min-width: 70%;
+}

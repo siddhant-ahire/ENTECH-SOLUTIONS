@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/entech-solutions/static/css/main.16c7a89b.css",
-    "main.js": "/entech-solutions/static/js/main.7bcb01a8.js",
-    "static/js/453.7f69509c.chunk.js": "/entech-solutions/static/js/453.7f69509c.chunk.js",
-    "index.html": "/entech-solutions/index.html",
-    "static/media/slick.svg": "/entech-solutions/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/entech-solutions/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/entech-solutions/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/entech-solutions/static/media/slick.295183786cd8a1389865.woff",
-    "main.16c7a89b.css.map": "/entech-solutions/static/css/main.16c7a89b.css.map",
-    "main.7bcb01a8.js.map": "/entech-solutions/static/js/main.7bcb01a8.js.map",
-    "453.7f69509c.chunk.js.map": "/entech-solutions/static/js/453.7f69509c.chunk.js.map"
+    "main.css": "/ENTECH-SOLUTIONS/static/css/main.9b8c202f.css",
+    "main.js": "/ENTECH-SOLUTIONS/static/js/main.63d2cce7.js",
+    "static/js/453.7f69509c.chunk.js": "/ENTECH-SOLUTIONS/static/js/453.7f69509c.chunk.js",
+    "index.html": "/ENTECH-SOLUTIONS/index.html",
+    "static/media/slick.svg": "/ENTECH-SOLUTIONS/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ENTECH-SOLUTIONS/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ENTECH-SOLUTIONS/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ENTECH-SOLUTIONS/static/media/slick.295183786cd8a1389865.woff",
+    "main.9b8c202f.css.map": "/ENTECH-SOLUTIONS/static/css/main.9b8c202f.css.map",
+    "main.63d2cce7.js.map": "/ENTECH-SOLUTIONS/static/js/main.63d2cce7.js.map",
+    "453.7f69509c.chunk.js.map": "/ENTECH-SOLUTIONS/static/js/453.7f69509c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16c7a89b.css",
-    "static/js/main.7bcb01a8.js"
+    "static/css/main.9b8c202f.css",
+    "static/js/main.63d2cce7.js"
   ]
 }
