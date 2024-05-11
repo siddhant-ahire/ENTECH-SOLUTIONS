@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ENTECH-SOLUTIONS/static/css/main.9b8c202f.css",
-    "main.js": "/ENTECH-SOLUTIONS/static/js/main.63d2cce7.js",
+    "main.js": "/ENTECH-SOLUTIONS/static/js/main.cf3ced5f.js",
     "static/js/453.7f69509c.chunk.js": "/ENTECH-SOLUTIONS/static/js/453.7f69509c.chunk.js",
     "index.html": "/ENTECH-SOLUTIONS/index.html",
     "static/media/slick.svg": "/ENTECH-SOLUTIONS/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -9,11 +9,11 @@
     "static/media/slick.ttf": "/ENTECH-SOLUTIONS/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/ENTECH-SOLUTIONS/static/media/slick.295183786cd8a1389865.woff",
     "main.9b8c202f.css.map": "/ENTECH-SOLUTIONS/static/css/main.9b8c202f.css.map",
-    "main.63d2cce7.js.map": "/ENTECH-SOLUTIONS/static/js/main.63d2cce7.js.map",
+    "main.cf3ced5f.js.map": "/ENTECH-SOLUTIONS/static/js/main.cf3ced5f.js.map",
     "453.7f69509c.chunk.js.map": "/ENTECH-SOLUTIONS/static/js/453.7f69509c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b8c202f.css",
-    "static/js/main.63d2cce7.js"
+    "static/js/main.cf3ced5f.js"
   ]
 }
