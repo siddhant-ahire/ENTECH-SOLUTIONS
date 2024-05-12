@@ -1,0 +1,239 @@
+{
+    "header": {
+        "header1": {
+            "email": "entechsolutions.co.in",
+            "button_text": "INQUIRE NOW"
+        },
+        "header2": {
+            "logo": "entech-logo.png",
+            "phone_number": "+1 234 456 78910",
+            "phone_text": "Call Us Now 24/7 Customer Support",
+            "location_text": "Our Location",
+            "location_location": "198 West 21th Street, Suite 721 New York NY 10016" 
+        },
+        "navbar": {
+            "button_text": "Contact US"
+        }
+    },
+    "homepage": {
+        "banner_section": {
+            "images": [
+                "images/bg_1.jpg",
+                "images/bg_2.jpg",
+                "images/bg_3.jpg"
+            ],
+            "head_text": "WE BUILDGREAT PROJECTS",
+            "paragraph_text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.",
+            "button_text": "OUR SERVICES" 
+        },
+        "banner_cards": [
+            {
+                "heading": "Quality Construction",
+                "paragraph": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+            },
+            {
+                "heading": "Professional Liability",
+                "paragraph": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+            },
+            {
+                "heading": "Dedicated To Our Clients",
+                "paragraph": "A small river named Duden flows by their place and supplies it with the necessary regelialia."
+            }
+        ],
+        "about_us": {
+            "bg_image": "images/bg_1.jpg",
+            "heading": "Wilcon A Construction Company",
+            "paragraph": "We're in this business since 1975 and We provide the best industrial services",
+            "paragraph2": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+            "video_link": "https:youtube.com/sjfsdjf",
+            "video_text": "This is how we work on our clients, Watch video"
+        },
+        "services": {
+            "small_heading": "OUR SERVICES",
+            "heading": "We Offer Services",
+            "cards": [
+                {
+                    "image": "images/iamge.png",
+                    "title": "Architecture",
+                    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+                },
+                {
+                    "image": "images/iamge.png",
+                    "title": "Renovation",
+                    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+                },
+                {
+                    "image": "images/iamge.png",
+                    "title": "Construction",
+                    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+                }
+            ]
+        },
+        "projects": {
+            "small_heading": "OUR GLOBAL WORK INDUSTRIES",
+            "heading": "Latest Projects",
+            "cards": [
+                {
+                    "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                    "type": "Building",
+                    "title": "BUILDING A CONDOMINIUM",
+                    "location": " San Francisco, California, USA"
+                },
+                {
+                    "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                    "date": "Building",
+                    "title": "BUILDING A CONDOMINIUM",
+                    "location": " San Francisco, California, USA"
+    
+                },
+                {
+                    "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                    "date": "Building",
+                    "title": "BUILDING A CONDOMINIUM",
+                    "location": " San Francisco, California, USA"
+                }
+            ]
+        },  
+        "testmonials": {
+            "small_title": "READ TESTIMONIALS",
+            "title": "It's always a joy to hear that the work we do has positively reviews",
+            "testimonials_cards": [
+                {
+                    "image": "images/photo.png",
+                    "name": "Jeff Freshman",
+                    "description": "Far far away, behind the word sdfsdf, far from the sdfsdfsdf Vokalia and Consonantia, there live the blind texts.",
+                    "type": "guest"
+                },
+                {
+                    "image": "images/photo.png",
+                    "name": "Jeff Freshman",
+                    "description": "Far far away, behind the word sdfsdf, far from the sdfsdfsdf Vokalia and Consonantia, there live the blind texts.",
+                    "type": "guest"
+                }
+            ]
+        },
+        "blog": {
+            "small_heading": "OUR BLOG",
+            "heading": "Latest Blog Updates",
+            "cards": [
+                {
+                    "image": "images/iamge.png",
+                    "date": "SEPT. 06, 2020",
+                    "description": "Best for any industrial & business solution"
+                },
+                {
+                    "image": "images/iamge.png",
+                    "date": "SEPT. 06, 2020",
+                    "description": "Best for any industrial & business solution"
+                },
+                {
+                    "image": "images/iamge.png",
+                    "date": "SEPT. 06, 2020",
+                    "description": "Best for any industrial & business solution"
+                }
+            ]
+        },  
+        "clients": {
+            "small_heading": "CLIENTS",
+            "heading": "Our Clients",
+            "images": [
+                {
+                    "image": "images/google.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/x.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/facebook.png",
+                    "name": "google"
+                }
+            ]
+        }
+    },
+    "blog": {
+        "small_heading": "OUR BLOG",
+        "heading": "Latest Blog Updates",
+        "cards": [
+            {
+                "image": "images/iamge.png",
+                "date": "SEPT. 06, 2020",
+                "description": "Best for any industrial & business solution"
+            },
+            {
+                "image": "images/iamge.png",
+                "date": "SEPT. 06, 2020",
+                "description": "Best for any industrial & business solution"
+            },
+            {
+                "image": "images/iamge.png",
+                "date": "SEPT. 06, 2020",
+                "description": "Best for any industrial & business solution"
+            }
+        ]
+    },  
+    "projects": {
+        "small_heading": "OUR GLOBAL WORK INDUSTRIES",
+        "heading": "Latest Projects",
+        "cards": [
+            {
+                "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                "type": "Building",
+                "title": "BUILDING A CONDOMINIUM",
+                "location": " San Francisco, California, USA"
+            },
+            {
+                "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                "date": "Building",
+                "title": "BUILDING A CONDOMINIUM",
+                "location": " San Francisco, California, USA"
+
+            },
+            {
+                "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                "date": "Building",
+                "title": "BUILDING A CONDOMINIUM",
+                "location": " San Francisco, California, USA"
+            }
+        ]
+    },  
+    "clients": {
+        "small_heading": "CLIENTS",
+        "heading": "Our Clients",
+        "images": [
+            {
+                "image": "images/google.png",
+                "name": "google"
+            },
+            {
+                "image": "images/x.png",
+                "name": "x"
+            },
+            {
+                "image": "images/facebook.png",
+                "name": "google"
+            }
+        ]
+    },
+    "about_us": {
+        "bg_image": "images/bg_1.jpg",
+        "heading": "Wilcon A Construction Company",
+        "paragraph": "We're in this business since 1975 and We provide the best industrial services",
+        "paragraph2": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+        "video_link": "https:youtube.com/sjfsdjf",
+        "video_text": "This is how we work on our clients, Watch video"
+    },
+    "footer": {
+        "about_text": "Far far away, behind the word mountains, far from the countries",
+        "address": "203 Fake St. Mountain View, San Francisco, California, USA",
+        "phone": "+2 392 3929 210",
+        "email": "info@yourdomain.com",
+        "copyright_text": "Copyright ©2024 ENTECH SOLUTIONS. All rights reserved",
+        "social_media_links": [
+            {"facebook": "facebook.com/test"},
+            {"twitter": "twitter.com/test"},
+            {"instagram": "instagram.com/test"}
+        ]
+    }
+}
