@@ -11,7 +11,7 @@ import ContactUs from "./pages/ContactUs";
 
 import App from "./App";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,  // Your App component that includes the Header and Outlet
