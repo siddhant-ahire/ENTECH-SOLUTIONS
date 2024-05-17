@@ -18,9 +18,9 @@
     "homepage": {
         "banner_section": {
             "images": [
-                "images/bg_1.jpg",
-                "images/bg_2.jpg",
-                "images/bg_3.jpg"
+                "images/banner_1.jpg",
+                "images/banner_2.jpg",
+                "images/banner_3.jpg"
             ],
             "head_text": "WE BUILDGREAT PROJECTS",
             "paragraph_text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.",
