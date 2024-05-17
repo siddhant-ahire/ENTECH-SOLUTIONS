@@ -15,12 +15,10 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
 import HomeHeader from './HomeHeader';
 import { Link } from 'react-router-dom';
+import AllData from '../../utils/data.json'
 
 const HomeCarousel = () => {
-    const images = [
-        "images/bg_1.jpg",
-        "images/bg_2.jpg",
-      ];
+    const images = AllData?.homepage?.banner_section?.images;
       const [currentIndex, setCurrentIndex] = useState(0);
       useEffect(() => {
         if(document &&  document.getElementById('ftco-loader')){

@@ -1,15 +1,15 @@
 {
     "header": {
         "header1": {
-            "email": "entechsolutions.co.in",
+            "email": "sales@entechsolutions.co.in",
             "button_text": "INQUIRE NOW"
         },
         "header2": {
             "logo": "entech-logo.png",
-            "phone_number": "+1 234 456 78910",
+            "phone_number": "+91 9004309645",
             "phone_text": "Call Us Now 24/7 Customer Support",
             "location_text": "Our Location",
-            "location_location": "198 West 21th Street, Suite 721 New York NY 10016" 
+            "location_location": "ENTECH SOLUTIONS B-1603, Balaji Symphony,Panvel Matheran Road, New Panvel East Navi Mumbai, Maharashtra-410 206" 
         },
         "navbar": {
             "button_text": "Contact US"

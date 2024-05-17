@@ -9,6 +9,7 @@ import Popover from 'react-bootstrap/Popover';
 import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
+import AllData from '../utils/data.json'
 
 
 const popover =  (
@@ -113,9 +114,9 @@ const Header = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
-              <p className="mb-0 w-100">
-                <span className="fa fa-paper-plane"></span>
-                <span className="text">info@entech.com</span>
+              <p className="d-flex mb-0 w-100 align-items-center">
+                <span className="fa fa-paper-plane mr-2"></span>
+                <span className="text">{AllData?.header?.header1?.email}</span>
               </p>
             </div>
             <div className="col-sm justify-content-center d-flex mb-md-0 mb-2">
@@ -149,7 +150,7 @@ const Header = () => {
               <span className="fa fa-map"></span>
             </div>
             <div className="pr-md-4 pl-md-3 pl-3 text">
-              <p className="con"><span>Free Call</span> <span>+1 234 456 78910</span></p>
+              <p className="con"><span>Free Call</span> <span>{AllData?.header?.header2?.phone_number}</span></p>
               <p className="con">Call Us Now 24/7 Customer Support</p>
             </div>
           </div>
@@ -158,7 +159,7 @@ const Header = () => {
             </div>
             <div className="text pl-3 pl-md-3">
               <p className="hr"><span>Our Location</span></p>
-              <p className="con">198 West 21th Street, Suite 721 New York NY 10016</p>
+              <p className="con">{AllData?.header?.header2?.location_location}</p>
             </div>
           </div>
         </div>
