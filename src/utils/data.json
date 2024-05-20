@@ -53,19 +53,19 @@
             "heading": "We Offer Services",
             "cards": [
                 {
-                    "image": "images/iamge.png",
-                    "title": "Architecture",
-                    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+                    "image": "images/services-1.webp" ,
+                    "title": "Architectural,Civil & Structural",
+                    "description": "A modern high-rise building under construction, showcasing architectural, civil, and structural engineering elements. The scene includes scaffolding, cranes, and a city skyline backdrop."
                 },
                 {
-                    "image": "images/iamge.png",
-                    "title": "Renovation",
-                    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+                    "image": "images/services-2.webp" ,
+                    "title": "Mechanical & Piping",
+                    "description": "An industrial setting highlighting mechanical and piping engineering. The image features complex pipe networks, large machinery, and engineers working on equipment with tools and blueprints visible."
                 },
                 {
-                    "image": "images/iamge.png",
-                    "title": "Construction",
-                    "description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
+                    "image": "images/services-3.webp" ,
+                    "title": "HVAC & Clean Room",
+                    "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
                 }
             ]
         },

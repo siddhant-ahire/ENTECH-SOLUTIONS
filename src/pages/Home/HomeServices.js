@@ -18,6 +18,7 @@ import HomeCarousel from './HomeCarousel';
 import HomeHighlights from './HomeHighlights';
 import HomeAboutUs from './HomeAboutUs';
 import HomeRequestQuote from './HomeRequestQuote';
+import AllData from '../../utils/data.json'
 
 const HomeServices = () => {
   return (
@@ -26,29 +27,19 @@ const HomeServices = () => {
       <div className="container">
         <div className="row justify-content-center mb-5 pb-2">
           <div className="col-md-8 text-center heading-section">
-            <span className="subheading">Our Services</span>
-            <h2 className="mb-4">We Offer Services</h2>
+            <span className="subheading">{AllData.homepage.services.small_heading}</span>
+            <h2 className="mb-4">{AllData.homepage.services.heading}</h2>
           </div>
         </div>
         <div className="row">
+        {AllData.homepage.services.cards.map((item) => (
           <ServiceItem2 
-            backgroundUrl="images/services-1.jpg" 
-            icon="flaticon-architect" 
-            title="Architecture" 
-            description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
-          />
-          <ServiceItem2 
-            backgroundUrl="images/services-2.jpg" 
-            icon="flaticon-worker" 
-            title="Renovation" 
-            description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
-          />
-          <ServiceItem2 
-            backgroundUrl="images/services-3.jpg" 
-            icon="flaticon-hammer" 
-            title="Construction" 
-            description="Far far away, behind the word mountains, far from the countries Vokalia and Consonantia"
-          />
+          backgroundUrl={item.image}
+          icon="flaticon-architect" 
+          title={item.title}
+          description={item.description}
+        />
+        ))}
         </div>
       </div>
     </section>
