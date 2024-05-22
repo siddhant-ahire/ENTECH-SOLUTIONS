@@ -139,15 +139,139 @@
             "heading": "Our Clients",
             "images": [
                 {
-                    "image": "images/google.png",
-                    "name": "google"
-                },
-                {
-                    "image": "images/x.png",
+                    "image": "images/clients/2.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/facebook.png",
+                    "image": "images/clients/3.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/4.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/5.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/6.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/7.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/8.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/9.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/10.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/11.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/12.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/13.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/14.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/15.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/16.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/17.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/18.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/19.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/20.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/21.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/22.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/23.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/24.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/25.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/26.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/27.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/28.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/29.png",
+                    "name": "x"
+                },
+                {
+                    "image": "images/clients/30.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/31.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/32.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/33.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/34.png",
+                    "name": "google"
+                },
+                {
+                    "image": "images/clients/35.png",
                     "name": "google"
                 }
             ]
@@ -204,15 +328,139 @@
         "heading": "Our Clients",
         "images": [
             {
-                "image": "images/google.png",
-                "name": "google"
-            },
-            {
-                "image": "images/x.png",
+                "image": "images/clients/2.png",
                 "name": "x"
             },
             {
-                "image": "images/facebook.png",
+                "image": "images/clients/3.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/4.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/5.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/6.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/7.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/8.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/9.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/10.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/11.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/12.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/13.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/14.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/15.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/16.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/17.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/18.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/19.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/20.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/21.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/22.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/23.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/24.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/25.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/26.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/27.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/28.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/29.png",
+                "name": "x"
+            },
+            {
+                "image": "images/clients/30.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/31.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/32.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/33.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/34.png",
+                "name": "google"
+            },
+            {
+                "image": "images/clients/35.png",
                 "name": "google"
             }
         ]

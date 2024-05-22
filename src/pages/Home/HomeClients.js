@@ -1,19 +1,8 @@
 import React from 'react';
 import Slider from 'react-slick';
+import AllData from '../../utils/data.json'
 
 const Index = () => {
-  const clients = [
-    { id: 1, name: 'Client 1', imageUrl: 'images/logo-entech2.png' },
-    { id: 2, name: 'Client 2', imageUrl: 'images/logo-entech2.png' },
-    { id: 3, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 4, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 5, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 6, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 7, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 8, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 9, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    // Add more clients as needed
-  ];
 
   const settings = {
     dots: true,
@@ -52,10 +41,10 @@ const Index = () => {
         </div>
         <div className="">
           <Slider {...settings}>
-            {clients.map(client => (
-              <div key={client.id}>
-                <div className="card">
-                  <img src={client.imageUrl} className="card-img-top" alt={client.name} />
+          {AllData.homepage.clients.images.map(client => (
+              <div key={client.image}>
+                <div className="card ml-4 mr-4">
+                  <img src={client.image} className="card-img-top rounded" alt={client.name} />
                 </div>
               </div>
             ))}

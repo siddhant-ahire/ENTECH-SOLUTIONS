@@ -16,6 +16,7 @@ import Popover from 'react-bootstrap/Popover';
 import HomeHeader from './HomeHeader';
 import HomeCarousel from './HomeCarousel';
 import HomeHighlights from './HomeHighlights';
+import { Slide } from 'react-awesome-reveal';
 
 const HomeAboutUs = () => {
     const [showModal, setShowModal] = useState(false);
@@ -65,28 +66,28 @@ const HomeAboutUs = () => {
         <section className="ftco-section" id="about-section">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 d-flex ">
+          <Slide triggerOnce direction={"Left"} className="col-md-6 d-flex " >
             <div className="img w-100 about-bg-image" style={backgroundImageStyle2}>
               {/* <div className="icon d-flex align-items-center justify-content-center"> */}
                 {/* <span className="flaticon-crane"></span> */}
               {/* </div> */}
             </div>
-          </div>
+            </Slide>
           <div className="col-md-6 py-5 pl-md-5">
           <div className="row justify-content-center mb-4 pt-md-4">
             <div className="col-md-12 heading-section">
-              <span className="subheading">Welcome to Wilcon</span>
-              <h2 className="mb-4">What we do?</h2>
+              <span className="subheading"><Slide triggerOnce direction='right'>Welcome to Entech Solutions</Slide></span>
+              <h2 className="mb-4"><Slide triggerOnce direction='right'>What we do?</Slide></h2>
               <div className="d-flex about">
                 <div className="icon"><span className="flaticon-hammer"></span></div>
-                <h3>We're in this business since 1975 and We provide the best industrial services</h3>
+                <h3><Slide triggerOnce direction='up'>We're in this business since 1975 and We provide the best industrial services</Slide></h3>
               </div>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><Slide triggerOnce direction='right'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</Slide></p>
               <div className="d-flex video-image align-items-center mt-md-4">
                 <a  href="javascript:void(0)" className="video img d-flex align-items-center justify-content-center" onClick={openModal} style={videoBackgroundImageStyle2}>
                   <span className="fa fa-play-circle"></span>
                 </a>
-                <h4 className="ml-4">This is how we work on our clients, Watch video</h4>
+                <h4 className="ml-4"><Slide triggerOnce direction='down'>This is how we work on our clients, Watch video</Slide></h4>
               </div>
             </div>
           </div>

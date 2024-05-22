@@ -1,20 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
+import AllData from '../../utils/data.json'
+import { Bounce, Slide } from 'react-awesome-reveal';
 
 
 const index = () => {
-  const clients = [
-    { id: 1, name: 'Client 1', imageUrl: 'images/logo-entech2.png' },
-    { id: 2, name: 'Client 2', imageUrl: 'images/logo-entech2.png' },
-    { id: 3, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 4, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 5, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 6, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 7, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 8, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
-    { id: 9, name: 'Client 3', imageUrl: 'images/logo-entech2.png' },
 
-    // Add more clients as needed
-  ];
   return (
     <>
         <section className="ftco-section bg-light">
@@ -27,15 +17,17 @@ const index = () => {
         </div>
         <div className="container mt-4">
       <div className="row">
-        {clients.map(client => (
-          <div className="col-sm-12 col-md-4 col-lg-3 mb-4" key={client.id}>
-            <div className="card">
-              <img src={client.imageUrl} className="card-img-top" alt={client.name} />
-              {/* <div className="card-body">
-                <h5 className="card-title">{client.name}</h5>
-              </div> */}
+        {AllData.clients.images.map((client, index) => (
+          <div className="col-sm-12 col-md-4 col-lg-3 mb-4" key={client.image}>
+              <Bounce  >
+                <div className="card">
+                  <img src={client.image} className="card-img-top rounded" alt={client.name} />
+                  {/* <div className="card-body">
+                    <h5 className="card-title">{client.name}</h5>
+                  </div> */}
+                </div>
+              </Bounce>
             </div>
-          </div>
         ))}
       </div>
     </div>

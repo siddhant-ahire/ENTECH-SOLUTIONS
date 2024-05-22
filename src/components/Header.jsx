@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
 import AllData from '../utils/data.json'
+import { Slide } from 'react-awesome-reveal';
 
 const popover =  (
   <Popover id="popover-basic">
@@ -80,23 +81,23 @@ const Header = () => {
           <div className="row">
             <div className="col-sm text-center text-md-left mb-md-0 mb-2 pr-md-4 d-flex topper align-items-center">
               <p className="d-flex mb-0 w-100 align-items-center">
-                <span className="fa fa-paper-plane mr-2"></span>
-                <span className="text">{AllData?.header?.header1?.email}</span>
+                <Slide triggerOnce direction='left'><span className="fa fa-paper-plane mr-2"></span></Slide>
+                <span className="text"><Slide triggerOnce direction='left'>{AllData?.header?.header1?.email}</Slide></span>
               </p>
             </div>
             <div className="col-sm justify-content-center d-flex mb-md-0 mb-2">
               <div className="social-media">
                 <p className="mb-0 d-flex">
-                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a>
+                <Slide triggerOnce direction='left'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a></Slide>
+                <Slide triggerOnce direction='right'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a></Slide>
+                <Slide triggerOnce direction='up'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a></Slide>
+                <Slide triggerOnce direction='down'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a></Slide>
                 </p>
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
               <p className="mb-0 register-link">
-                <button className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</button>
+              <Slide triggerOnce direction='right'><button className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</button></Slide>
               </p>
             </div>
           </div>
@@ -107,7 +108,7 @@ const Header = () => {
         <div className="row d-flex align-items-start align-items-center px-3 px-md-0">
           <div className="col-md-4 d-flex mb-2 mb-md-0">
             <Link className="navbar-brand d-flex align-items-center" to={"/"}>
-            <img src="images/logo-entech3.png" width={120} height={105}/>
+            <Slide triggerOnce direction='left'><img src="images/logo-entech3.png" width={120} height={105}/></Slide>
             </Link>
           </div>
           <div className="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -115,7 +116,7 @@ const Header = () => {
               <span className="fa fa-map"></span>
             </div>
             <div className="pr-md-4 pl-md-3 pl-3 text">
-              <p className="con"><span>Free Call</span> <span>{AllData?.header?.header2?.phone_number}</span></p>
+              <p className="con"><span>Free Call</span> <span><Slide triggerOnce direction='up'>{AllData?.header?.header2?.phone_number}</Slide></span></p>
               <p className="con"></p>
             </div>
           </div>
@@ -124,7 +125,7 @@ const Header = () => {
             </div>
             <div className="text pl-3 pl-md-3">
               <p className="hr"><span>Our Location</span></p>
-              <p className="con">{AllData?.header?.header2?.location_location}</p>
+              <p className="con"><Slide triggerOnce direction='right'>{AllData?.header?.header2?.location_location}</Slide></p>
             </div>
           </div>
         </div>
@@ -136,6 +137,7 @@ const Header = () => {
             
           }}></span> Menu
         </button>
+        <Slide triggerOnce direction='up'>
         <Collapse in={openMenu}>
         <div className="navbar-collapse" id="ftco-nav">
           <ul className="navbar-nav mr-auto">
@@ -182,6 +184,7 @@ const Header = () => {
           <Link to={"contact-us"} className="btn-custom" data-toggle="modal" data-target="#exampleModalCenter">Contact Us</Link>
         </div>
         </Collapse>
+        </Slide>
       </div>
     </nav>
     <div class="collapse" id="collapseExample">
