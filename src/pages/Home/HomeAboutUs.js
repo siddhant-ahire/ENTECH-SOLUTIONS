@@ -21,7 +21,7 @@ const HomeAboutUs = () => {
     const [showModal, setShowModal] = useState(false);
     const videoRef = useRef(null); // Using useRef to reference the video element
     const backgroundImageStyle2 = {
-        backgroundImage: "url('images/about.jpg')"
+        backgroundImage: "url('images/about-1.png')"
       };
     
       const videoBackgroundImageStyle2 = {
@@ -73,7 +73,7 @@ const HomeAboutUs = () => {
           <div className="row justify-content-center mb-4 pt-md-4">
             <div className="col-md-12 heading-section">
               <span className="subheading">Welcome to Wilcon</span>
-              <h2 className="mb-4">Wilcon A Construction Company</h2>
+              <h2 className="mb-4">What we do?</h2>
               <div className="d-flex about">
                 <div className="icon"><span className="flaticon-hammer"></span></div>
                 <h3>We're in this business since 1975 and We provide the best industrial services</h3>

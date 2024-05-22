@@ -4,6 +4,7 @@
             "email": "sales@entechsolutions.co.in",
             "button_text": "INQUIRE NOW"
         },
+        "services": ["Architectural,Civil & Structural", "Mechanical & Piping", "HVAC & Clean Room","Fire Fighting System " ,"Electrical", "Instrumentation & Automation", "Project Management & Construction" ],
         "header2": {
             "logo": "entech-logo.png",
             "phone_number": "+91 9004309645",
@@ -225,11 +226,14 @@
         "video_text": "This is how we work on our clients, Watch video"
     },
     "footer": {
-        "about_text": "Far far away, behind the word mountains, far from the countries",
-        "address": "203 Fake St. Mountain View, San Francisco, California, USA",
-        "phone": "+2 392 3929 210",
-        "email": "info@yourdomain.com",
+        "about_text": "ENTECH SOLUTIONS",
+        "about_text2": "Where Ideas Take Shape.",
+        "address": "B-1603, Balaji Symphony,Panvel Matheran Road, New Panvel East Navi Mumbai, Maharashtra-410 206",
+        "phone":  "+91 9004309645",
+        "email":  "sales@entechsolutions.co.in",
+        "email2": "projects@entechsolutions.co.in",
         "copyright_text": "Copyright ©2024 ENTECH SOLUTIONS. All rights reserved",
+        "services": ["Architectural,Civil & Structural", "Mechanical & Piping", "HVAC & Clean Room","Fire Fighting System " ,"Electrical", "Instrumentation & Automation", "Project Management & Construction" ],
         "social_media_links": [
             {"facebook": "facebook.com/test"},
             {"twitter": "twitter.com/test"},

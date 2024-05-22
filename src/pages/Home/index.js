@@ -33,12 +33,12 @@ const Home = () => {
         <HomeCarousel/>
         <HomeHighlights/>
         <HomeAboutUs/>
-        <HomeRequestQuote/>
+        {/* <HomeRequestQuote/> */}
         <HomeServices/>
         <HomeCounter/>
         <HomeProjects/>
         <HomeTestimonials/>
-        <HomeBlogs/>
+        {/* <HomeBlogs/> */}
         <HomeClients/>
     </div>
   );

@@ -13,59 +13,19 @@ import CustomSlider from '../../components/CustomSlider';
 import Button from 'react-bootstrap/Button';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Popover from 'react-bootstrap/Popover';
+import AllData from '../../utils/data.json'
+
 const popover =  (
   <Popover id="popover-basic">
   {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
   <Popover.Body className='d-flex justify-content-center'>
     <div>
       {
-        [...Array(10)].map((v, index) => {
+        AllData.header.services.map((v, index) => {
           return <p className=''>Service........ {index}</p>
         })
       }
       </div>
-      <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-      </div>
-      <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
   </Popover.Body>
 </Popover>
 );

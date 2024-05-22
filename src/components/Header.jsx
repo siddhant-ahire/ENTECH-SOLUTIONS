@@ -11,60 +11,17 @@ import { useLocation } from 'react-router-dom';
 import { Collapse } from 'react-bootstrap';
 import AllData from '../utils/data.json'
 
-
 const popover =  (
   <Popover id="popover-basic">
   {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
   <Popover.Body className='d-flex justify-content-center'>
-    <div>
+    <div className='d-flex'>
       {
-        [...Array(10)].map((v, index) => {
-          return <p className=''>Service........ {index}</p>
+        AllData.header.services.map((v, index) => {
+          return <p className=''>{v}</p>
         })
       }
       </div>
-      <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-      </div>
-      <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
-    <div>
-            {
-        [...Array(10)].map((v, index) => {
-          return <p className='ml-5'>Service........ {index}</p>
-        })
-      }
-    </div>
   </Popover.Body>
 </Popover>
 );
@@ -142,7 +99,7 @@ const Header = () => {
         <div className="row d-flex align-items-start align-items-center px-3 px-md-0">
           <div className="col-md-4 d-flex mb-2 mb-md-0">
             <Link className="navbar-brand d-flex align-items-center" to={"/"}>
-            <img src="images/logo-entech3.png" width={120} height={100}/>
+            <img src="images/logo-entech3.png" width={120} height={105}/>
             </Link>
           </div>
           <div className="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -151,7 +108,7 @@ const Header = () => {
             </div>
             <div className="pr-md-4 pl-md-3 pl-3 text">
               <p className="con"><span>Free Call</span> <span>{AllData?.header?.header2?.phone_number}</span></p>
-              <p className="con">Call Us Now 24/7 Customer Support</p>
+              <p className="con"></p>
             </div>
           </div>
           <div className="col-md-4 d-flex topper mb-md-0 align-items-center">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AllData from "../utils/data.json";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="col-lg col-md-6">
             <div className="ftco-footer-widget">
               <h2 className="ftco-heading-2 d-flex align-items-center">About</h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <p>{AllData.footer.about_text} <br></br> {AllData.footer.about_text2}</p>
               <ul className="ftco-footer-social list-unstyled mt-4">
                 <li><a href="#"><span className="fa fa-twitter"></span></a></li>
                 <li><a href="#"><span className="fa fa-facebook"></span></a></li>
@@ -43,10 +44,9 @@ const Footer = () => {
             <div className="ftco-footer-widget">
               <h2 className="ftco-heading-2">Services</h2>
               <ul className="list-unstyled">
-                <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Customer Services</a></li>
-                <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Prompt Delivery</a></li>
-                <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>Reliable Equipment</a></li>
-                <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>New Heavy Equipment</a></li>
+                {AllData.footer.services.map(v => {
+                   return <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>{v}</a></li>
+                })}
               </ul>
             </div>
           </div>
@@ -56,9 +56,10 @@ const Footer = () => {
               <h2 className="ftco-heading-2">Have a Questions?</h2>
               <div className="block-23 mb-3">
                 <ul>
-                  <li><span className="fa fa-map-marker mr-3"></span><span className="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-                  <li><a href="#"><span className="fa fa-phone mr-3"></span><span className="text">+2 392 3929 210</span></a></li>
-                  <li><a href="#"><span className="fa fa-paper-plane mr-3"></span><span className="text">info@yourdomain.com</span></a></li>
+                  <li><span className="fa fa-map-marker mr-3"></span><span className="text">{AllData.footer.address}</span></li>
+                  <li><a href="#"><span className="fa fa-phone mr-3"></span><span className="text">{AllData.footer.phone}</span></a></li>
+                  <li><a href="#"><span className="fa fa-paper-plane mr-3"></span><span className="text">{AllData.footer.email} {AllData.footer.email2}</span></a></li>
+                  
                 </ul>
               </div>
             </div>
