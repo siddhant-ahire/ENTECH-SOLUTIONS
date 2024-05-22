@@ -21,7 +21,10 @@ const HomeAboutUs = () => {
     const [showModal, setShowModal] = useState(false);
     const videoRef = useRef(null); // Using useRef to reference the video element
     const backgroundImageStyle2 = {
-        backgroundImage: "url('images/about-1.png')"
+        backgroundImage: "url('images/about-1.png')",
+        backgroundSize: 'contain', // or specify a size like '50%' or '100px'
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
       };
     
       const videoBackgroundImageStyle2 = {
@@ -62,11 +65,11 @@ const HomeAboutUs = () => {
         <section className="ftco-section" id="about-section">
       <div className="container">
         <div className="row">
-          <div className="col-md-6 d-flex align-items-stretch">
-            <div className="about-wrap img w-100" style={backgroundImageStyle2}>
-              <div className="icon d-flex align-items-center justify-content-center">
-                <span className="flaticon-crane"></span>
-              </div>
+          <div className="col-md-6 d-flex ">
+            <div className="img w-100 about-bg-image" style={backgroundImageStyle2}>
+              {/* <div className="icon d-flex align-items-center justify-content-center"> */}
+                {/* <span className="flaticon-crane"></span> */}
+              {/* </div> */}
             </div>
           </div>
           <div className="col-md-6 py-5 pl-md-5">

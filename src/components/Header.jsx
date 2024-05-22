@@ -15,10 +15,18 @@ const popover =  (
   <Popover id="popover-basic">
   {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
   <Popover.Body className='d-flex justify-content-center'>
-    <div className='d-flex'>
+    <div className='d-flex flex-wrap'>
       {
         AllData.header.services.map((v, index) => {
-          return <p className=''>{v}</p>
+          return <p className='m-3'
+            style={{ 
+              cursor: 'pointer', 
+              color: 'initial', 
+              transition: 'color 0.3s ease'
+            }}
+            onMouseEnter={(e) => e.target.style.color = 'var(--websitetheme)'}
+            onMouseLeave={(e) => e.target.style.color = 'initial'}
+          >&#x2022; {v}</p>
         })
       }
       </div>
@@ -154,10 +162,11 @@ const Header = () => {
                         <a href="javascript:void(0)" style={{ cursor: 'pointer' }} className="nav-link">Services</a>
                         <Collapse in={open}>
                             <ul style={{listStyleType: 'square'}}>
-                                <li className='mb-3'>Service 1</li>
-                                <li className='mb-3'>Service 2</li>
-                                <li className='mb-3'>Service 3</li>
-                                <li className='mb-3'>Service 4</li>
+                            {
+                              AllData.header.services.map((v, index) => {
+                                return <li className='mb-3'>{v}</li>
+                              })
+                            }
                             </ul>
                         </Collapse>
                     </li>
