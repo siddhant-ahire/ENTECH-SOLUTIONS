@@ -7,6 +7,7 @@ import Clients from "./pages/Clients";
 import Blogs from "./pages/Blogs";
 import Services from "./pages/Services";
 import ContactUs from "./pages/ContactUs";
+import ServiceDetail from "./pages/Services/serviceDetail";
 
 
 import App from "./App";
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "about-us", element: <AboutUs /> },
-      { path: "services", element: <Services /> },
+      { path: "services", 
+        children: [
+          { path: "", element: <Services /> },
+          { path: ":id", element: <ServiceDetail /> },
+        ] 
+      },
       { path: "projects", element: <Projects /> },
       { path: "blogs", element: <Blogs /> },
       { path: "clients", element: <Clients /> },

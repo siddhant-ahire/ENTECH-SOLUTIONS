@@ -19,9 +19,9 @@
     "homepage": {
         "banner_section": {
             "images": [
-                "images/banner_1.jpg",
-                "images/banner_2.jpg",
-                "images/banner_3.jpg"
+                "/images/banner_1.jpg",
+                "/images/banner_2.jpg",
+                "/images/banner_3.jpg"
             ],
             "head_text": "WE BUILDGREAT PROJECTS",
             "paragraph_text": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.",
@@ -42,7 +42,7 @@
             }
         ],
         "about_us": {
-            "bg_image": "images/bg_1.jpg",
+            "bg_image": "/images/bg_1.jpg",
             "heading": "Wilcon A Construction Company",
             "paragraph": "We're in this business since 1975 and We provide the best industrial services",
             "paragraph2": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
@@ -54,17 +54,17 @@
             "heading": "We Offer Services",
             "cards": [
                 {
-                    "image": "images/services-1.webp" ,
+                    "image": "/images/services-1.webp" ,
                     "title": "Architectural,Civil & Structural",
                     "description": "A modern high-rise building under construction, showcasing architectural, civil, and structural engineering elements. The scene includes scaffolding, cranes, and a city skyline backdrop."
                 },
                 {
-                    "image": "images/services-2.webp" ,
+                    "image": "/images/services-2.webp" ,
                     "title": "Mechanical & Piping",
                     "description": "An industrial setting highlighting mechanical and piping engineering. The image features complex pipe networks, large machinery, and engineers working on equipment with tools and blueprints visible."
                 },
                 {
-                    "image": "images/services-3.webp" ,
+                    "image": "/images/services-3.webp" ,
                     "title": "HVAC & Clean Room",
                     "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
                 }
@@ -75,20 +75,20 @@
             "heading": "Latest Projects",
             "cards": [
                 {
-                    "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                    "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
                     "type": "Building",
                     "title": "BUILDING A CONDOMINIUM",
                     "location": " San Francisco, California, USA"
                 },
                 {
-                    "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                    "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
                     "date": "Building",
                     "title": "BUILDING A CONDOMINIUM",
                     "location": " San Francisco, California, USA"
     
                 },
                 {
-                    "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                    "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
                     "date": "Building",
                     "title": "BUILDING A CONDOMINIUM",
                     "location": " San Francisco, California, USA"
@@ -100,13 +100,13 @@
             "title": "It's always a joy to hear that the work we do has positively reviews",
             "testimonials_cards": [
                 {
-                    "image": "images/photo.png",
+                    "image": "/images/photo.png",
                     "name": "Jeff Freshman",
                     "description": "Far far away, behind the word sdfsdf, far from the sdfsdfsdf Vokalia and Consonantia, there live the blind texts.",
                     "type": "guest"
                 },
                 {
-                    "image": "images/photo.png",
+                    "image": "/images/photo.png",
                     "name": "Jeff Freshman",
                     "description": "Far far away, behind the word sdfsdf, far from the sdfsdfsdf Vokalia and Consonantia, there live the blind texts.",
                     "type": "guest"
@@ -118,17 +118,17 @@
             "heading": "Latest Blog Updates",
             "cards": [
                 {
-                    "image": "images/iamge.png",
+                    "image": "/images/iamge.png",
                     "date": "SEPT. 06, 2020",
                     "description": "Best for any industrial & business solution"
                 },
                 {
-                    "image": "images/iamge.png",
+                    "image": "/images/iamge.png",
                     "date": "SEPT. 06, 2020",
                     "description": "Best for any industrial & business solution"
                 },
                 {
-                    "image": "images/iamge.png",
+                    "image": "/images/iamge.png",
                     "date": "SEPT. 06, 2020",
                     "description": "Best for any industrial & business solution"
                 }
@@ -139,139 +139,139 @@
             "heading": "Our Clients",
             "images": [
                 {
-                    "image": "images/clients/2.png",
+                    "image": "/images/clients/2.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/3.png",
+                    "image": "/images/clients/3.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/4.png",
+                    "image": "/images/clients/4.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/5.png",
+                    "image": "/images/clients/5.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/6.png",
+                    "image": "/images/clients/6.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/7.png",
+                    "image": "/images/clients/7.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/8.png",
+                    "image": "/images/clients/8.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/9.png",
+                    "image": "/images/clients/9.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/10.png",
+                    "image": "/images/clients/10.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/11.png",
+                    "image": "/images/clients/11.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/12.png",
+                    "image": "/images/clients/12.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/13.png",
+                    "image": "/images/clients/13.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/14.png",
+                    "image": "/images/clients/14.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/15.png",
+                    "image": "/images/clients/15.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/16.png",
+                    "image": "/images/clients/16.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/17.png",
+                    "image": "/images/clients/17.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/18.png",
+                    "image": "/images/clients/18.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/19.png",
+                    "image": "/images/clients/19.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/20.png",
+                    "image": "/images/clients/20.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/21.png",
+                    "image": "/images/clients/21.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/22.png",
+                    "image": "/images/clients/22.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/23.png",
+                    "image": "/images/clients/23.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/24.png",
+                    "image": "/images/clients/24.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/25.png",
+                    "image": "/images/clients/25.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/26.png",
+                    "image": "/images/clients/26.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/27.png",
+                    "image": "/images/clients/27.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/28.png",
+                    "image": "/images/clients/28.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/29.png",
+                    "image": "/images/clients/29.png",
                     "name": "x"
                 },
                 {
-                    "image": "images/clients/30.png",
+                    "image": "/images/clients/30.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/31.png",
+                    "image": "/images/clients/31.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/32.png",
+                    "image": "/images/clients/32.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/33.png",
+                    "image": "/images/clients/33.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/34.png",
+                    "image": "/images/clients/34.png",
                     "name": "google"
                 },
                 {
-                    "image": "images/clients/35.png",
+                    "image": "/images/clients/35.png",
                     "name": "google"
                 }
             ]
@@ -282,17 +282,17 @@
         "heading": "Latest Blog Updates",
         "cards": [
             {
-                "image": "images/iamge.png",
+                "image": "/images/iamge.png",
                 "date": "SEPT. 06, 2020",
                 "description": "Best for any industrial & business solution"
             },
             {
-                "image": "images/iamge.png",
+                "image": "/images/iamge.png",
                 "date": "SEPT. 06, 2020",
                 "description": "Best for any industrial & business solution"
             },
             {
-                "image": "images/iamge.png",
+                "image": "/images/iamge.png",
                 "date": "SEPT. 06, 2020",
                 "description": "Best for any industrial & business solution"
             }
@@ -303,20 +303,20 @@
         "heading": "Latest Projects",
         "cards": [
             {
-                "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
                 "type": "Building",
                 "title": "BUILDING A CONDOMINIUM",
                 "location": " San Francisco, California, USA"
             },
             {
-                "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
                 "date": "Building",
                 "title": "BUILDING A CONDOMINIUM",
                 "location": " San Francisco, California, USA"
 
             },
             {
-                "image": ["images/iamge.png", "images/iamge2.png", "images/iamge3.png"],
+                "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
                 "date": "Building",
                 "title": "BUILDING A CONDOMINIUM",
                 "location": " San Francisco, California, USA"
@@ -328,150 +328,198 @@
         "heading": "Our Clients",
         "images": [
             {
-                "image": "images/clients/2.png",
+                "image": "/images/clients/2.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/3.png",
+                "image": "/images/clients/3.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/4.png",
+                "image": "/images/clients/4.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/5.png",
+                "image": "/images/clients/5.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/6.png",
+                "image": "/images/clients/6.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/7.png",
+                "image": "/images/clients/7.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/8.png",
+                "image": "/images/clients/8.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/9.png",
+                "image": "/images/clients/9.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/10.png",
+                "image": "/images/clients/10.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/11.png",
+                "image": "/images/clients/11.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/12.png",
+                "image": "/images/clients/12.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/13.png",
+                "image": "/images/clients/13.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/14.png",
+                "image": "/images/clients/14.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/15.png",
+                "image": "/images/clients/15.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/16.png",
+                "image": "/images/clients/16.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/17.png",
+                "image": "/images/clients/17.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/18.png",
+                "image": "/images/clients/18.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/19.png",
+                "image": "/images/clients/19.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/20.png",
+                "image": "/images/clients/20.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/21.png",
+                "image": "/images/clients/21.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/22.png",
+                "image": "/images/clients/22.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/23.png",
+                "image": "/images/clients/23.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/24.png",
+                "image": "/images/clients/24.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/25.png",
+                "image": "/images/clients/25.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/26.png",
+                "image": "/images/clients/26.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/27.png",
+                "image": "/images/clients/27.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/28.png",
+                "image": "/images/clients/28.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/29.png",
+                "image": "/images/clients/29.png",
                 "name": "x"
             },
             {
-                "image": "images/clients/30.png",
+                "image": "/images/clients/30.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/31.png",
+                "image": "/images/clients/31.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/32.png",
+                "image": "/images/clients/32.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/33.png",
+                "image": "/images/clients/33.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/34.png",
+                "image": "/images/clients/34.png",
                 "name": "google"
             },
             {
-                "image": "images/clients/35.png",
+                "image": "/images/clients/35.png",
                 "name": "google"
             }
         ]
     },
     "about_us": {
-        "bg_image": "images/bg_1.jpg",
+        "bg_image": "/images/bg_1.jpg",
         "heading": "Wilcon A Construction Company",
         "paragraph": "We're in this business since 1975 and We provide the best industrial services",
         "paragraph2": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
         "video_link": "https:youtube.com/sjfsdjf",
         "video_text": "This is how we work on our clients, Watch video"
+    },
+    "services": {
+        "small_heading": "OUR SERVICES",
+        "heading": "We Offer Services",
+        "cards": [
+            {
+                "path": "architectural-civil-and-structural",
+                "image": "/images/services-1.webp" ,
+                "title": "Architectural,Civil & Structural",
+                "description": "A modern high-rise building under construction, showcasing architectural, civil, and structural engineering elements. The scene includes scaffolding, cranes, and a city skyline backdrop."
+            },
+            {
+                "path": "mechanical-piping",
+                "image": "/images/services-2.webp" ,
+                "title": "Mechanical & Piping",
+                "description": "An industrial setting highlighting mechanical and piping engineering. The image features complex pipe networks, large machinery, and engineers working on equipment with tools and blueprints visible."
+            },
+            {
+                "path": "havc-and-clean-room",
+                "image": "/images/services-3.webp" ,
+                "title": "HVAC & Clean Room",
+                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+            },
+            {
+                "path": "fire-fighting-system",
+                "image": "/images/services-3.webp" ,
+                "title": "Fire Fighting System",
+                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+            },
+            {
+                "path": "electrical",
+                "image": "/images/services-3.webp" ,
+                "title": "Electrical",
+                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+            },
+            {
+                "path": "instrumentation-and-automation",
+                "image": "/images/services-3.webp" ,
+                "title": "Instrumentation & Automation",
+                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+            },
+            {
+                "path": "project-management-and-construction",
+                "image": "/images/services-3.webp" ,
+                "title": "Project Management & Construction",
+                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+            }
+        ]
     },
     "footer": {
         "about_text": "ENTECH SOLUTIONS",

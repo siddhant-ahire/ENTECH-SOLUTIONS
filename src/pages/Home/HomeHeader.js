@@ -78,7 +78,7 @@ const HomeHeader = () => {
         <div className="row d-flex align-items-start align-items-center px-3 px-md-0">
           <div className="col-md-4 d-flex mb-2 mb-md-0">
             <a className="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/logo-entech.png" width={130} height={70}/>
+            <img src="/images/logo-entech.png" width={130} height={70}/>
             </a>
           </div>
           <div className="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">

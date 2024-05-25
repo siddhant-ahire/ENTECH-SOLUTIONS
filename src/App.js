@@ -24,7 +24,7 @@ const App = () => {
       <Header/>
       <main>
         <Outlet />
-      <MaintenanceModal isOpen={isMaintenanceMode} setIsMaintenanceMode={setIsMaintenanceMode} />
+        <MaintenanceModal isOpen={isMaintenanceMode} setIsMaintenanceMode={setIsMaintenanceMode} />
         {/* Content rendered by the router will go here */}
       </main>
       <Footer/>

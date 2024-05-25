@@ -22,12 +22,12 @@ import HomeRequestQuote from './HomeRequestQuote';
 const HomeProjects = () => {
         // Example data array
         const projects = [
-            { imageUrl: "images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" }
+            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
+            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
+            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
+            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
+            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
+            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" }
           ];
   return (
     <>

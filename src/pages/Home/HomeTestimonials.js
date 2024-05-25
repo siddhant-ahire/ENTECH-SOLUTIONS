@@ -23,8 +23,8 @@ import HomeCounter from './HomeCounter';
 import HomeProjects from './HomeProjects';
 const HomeTestimonials = () => {
     const testimonials = [
-        { imageUrl: "images/person_1.jpg", quote: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", name: "Jeff Freshman", position: "Guest" },
-        { imageUrl: "images/person_2.jpg", quote: "Far far away, behind the word sdfsdf, far from the sdfsdfsdf Vokalia and Consonantia, there live the blind texts.", name: "Jeff Freshman", position: "Guest" },
+        { imageUrl: "/images/person_1.jpg", quote: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", name: "Jeff Freshman", position: "Guest" },
+        { imageUrl: "/images/person_2.jpg", quote: "Far far away, behind the word sdfsdf, far from the sdfsdfsdf Vokalia and Consonantia, there live the blind texts.", name: "Jeff Freshman", position: "Guest" },
         // Add more testimonials as needed
       ];
   return (

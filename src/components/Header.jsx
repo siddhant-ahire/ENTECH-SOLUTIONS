@@ -12,37 +12,44 @@ import { Collapse } from 'react-bootstrap';
 import AllData from '../utils/data.json'
 import { Slide } from 'react-awesome-reveal';
 
-const popover =  (
-  <Popover id="popover-basic">
-  {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
-  <Popover.Body className='d-flex justify-content-center'>
-    <div className='d-flex flex-wrap'>
-      {
-        AllData.header.services.map((v, index) => {
-          return <p className='m-3'
-            style={{ 
-              cursor: 'pointer', 
-              color: 'initial', 
-              transition: 'color 0.3s ease'
-            }}
-            onMouseEnter={(e) => e.target.style.color = 'var(--websitetheme)'}
-            onMouseLeave={(e) => e.target.style.color = 'initial'}
-          >&#x2022; {v}</p>
-        })
-      }
-      </div>
-  </Popover.Body>
-</Popover>
-);
+
 
 const Header = () => {
     const location = useLocation();
     const pathSegment = location.pathname.split('/').filter(Boolean)[0];
+    const pathSegment2 = location.pathname.split('/').filter(Boolean)[1];
     const [showPopover, setShowPopover] = useState(false);
     const [open, setOpen] = useState(false);
     const [openMenu, setOpenMenu] = useState(false);
     const target = useRef(null);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 991.98);
+
+    const popover =  (
+      <Popover id="popover-basic">
+      {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
+      <Popover.Body className='d-flex justify-content-center'>
+        <div className='d-flex flex-wrap'>
+          {
+            AllData.services.cards.map((v, index) => {
+              return <Link className={`m-3 ${pathSegment2 == v.path && 'active'}`}
+                to={`/services/${v.path}`}
+                style={{ 
+                  cursor: 'pointer', 
+                  color: `${pathSegment2 == v.path ? 'var(--websitetheme)' : 'initial'}`, 
+                  transition: 'color 0.3s ease'
+                }}
+                onClick={() => setShowPopover(false)}
+                onMouseEnter={(e) => e.target.style.color = 'var(--websitetheme)'}
+                onMouseLeave={(e) => e.target.style.color = 'initial'}
+              >&#x2022; {v.title}</Link>
+            })
+          }
+          </div>
+      </Popover.Body>
+    </Popover>
+    );
+
+    
         // Event handler to close the popover on outside clicks
         const handleClickOutside = (event) => {
             if (target.current && !target.current.contains(event.target)) {
@@ -108,7 +115,7 @@ const Header = () => {
         <div className="row d-flex align-items-start align-items-center px-3 px-md-0">
           <div className="col-md-4 d-flex mb-2 mb-md-0">
             <Link className="navbar-brand d-flex align-items-center" to={"/"}>
-            <Slide triggerOnce direction='left'><img src="images/logo-entech3.png" width={120} height={105}/></Slide>
+            <Slide triggerOnce direction='left'><img src="/images/logo-entech3.png" width={120} height={105}/></Slide>
             </Link>
           </div>
           <div className="col-md-4 d-flex topper mb-md-0 mb-2 align-items-center">
@@ -152,7 +159,7 @@ const Header = () => {
             onToggle={(isOpen) => setShowPopover(isOpen)}
             rootClose={true}  // Utilize Bootstrap's root close utility
         >
-            <li ref={target} className="nav-item">
+            <li ref={target} className={`nav-item ${pathSegment == 'services' && 'active'}`}>
                 <a href="javascript:void(0)" style={{ cursor: 'pointer' }} className="nav-link" onClick={() => setShowPopover(!showPopover)}>
                     Services
                 </a>
@@ -165,8 +172,16 @@ const Header = () => {
                         <Collapse in={open}>
                             <ul style={{listStyleType: 'square'}}>
                             {
-                              AllData.header.services.map((v, index) => {
-                                return <li className='mb-3'>{v}</li>
+                              AllData.services.cards.map((v, index) => {
+                                return <li className={`mb-3 ${pathSegment2 == v.path && 'active'}`}><Link to={`/services/${v.path}`}
+                                style={{ 
+                                  cursor: 'pointer', 
+                                  color: `${pathSegment2 == v.path ? 'var(--websitetheme)' : 'gray'}`, 
+                                  transition: 'color 0.3s ease'
+                                }}
+                                // onMouseEnter={(e) => e.target.style.color = 'var(--websitetheme)'}
+                                // onMouseLeave={(e) => e.target.style.color = 'initial'}
+                                >{v.title}</Link></li>
                               })
                             }
                             </ul>
