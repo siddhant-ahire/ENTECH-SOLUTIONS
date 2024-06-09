@@ -54,19 +54,29 @@
             "heading": "We Offer Services",
             "cards": [
                 {
-                    "image": "/images/services-1.webp" ,
-                    "title": "Architectural,Civil & Structural",
-                    "description": "A modern high-rise building under construction, showcasing architectural, civil, and structural engineering elements. The scene includes scaffolding, cranes, and a city skyline backdrop."
+                    "path": "architectural-civil-and-structural",
+                    "image": "/images/civil-structure-1.jpg",
+                    "images": ["/images/archi1.png", "/images/civil-structure-1.jpg", "/images/ELEVATION-333.jpg", "/images/ELEVATION-222424.jpg", 
+                        "/images/PLAN.jpg", "/images/Screenshot (4).png", "/images/Screenshot (8).png", "/images/Screenshot (15).png", "/images/Screenshot (17).png", 
+                        "/images/Screenshot (18).png", "/images/Screenshot (20).png",
+                        "/images/20151024_120931.jpg", "/images/20160210_114316.jpg", "/images/IMG-20170216-WA0032.jpg", "/images/IMG-20170216-WA0034.jpg", "/images/Manufacturing-API-Plant-1-Panelav-Gujarat.jpg"
+                    ],
+                    "title": "Architectural, Civil & Structural",
+                    "description": "At Entech Solutions, we specialize in delivering comprehensive design solutions that integrate architectural innovation, civil engineering precision, and robust structural integrity. Our architectural team brings your vision to life with creative and functional designs that blend aesthetics with practicality. Our civil engineers ensure that every project is meticulously planned and executed, addressing environmental, zoning, and regulatory requirements. Meanwhile, our structural engineers guarantee the safety and durability of your buildings through advanced analysis and cutting-edge materials. Together, we create spaces that are not only visually stunning but also resilient and sustainable."
                 },
                 {
-                    "image": "/images/services-2.webp" ,
+                    "path": "mechanical-piping",
+                    "image":  "/images/IMG-20210708-WA0032.jpg" ,
+                    "images": ["/images/civil-structure-1.jpg"],
                     "title": "Mechanical & Piping",
-                    "description": "An industrial setting highlighting mechanical and piping engineering. The image features complex pipe networks, large machinery, and engineers working on equipment with tools and blueprints visible."
+                    "description": "At Entech Solutions, we provide comprehensive mechanical process and utility piping solutions tailored to your specific industry requirements. Our experienced team designs, installs, and maintains piping systems that ensure efficient transport of fluids and gases for various industrial processes. We specialize in creating robust and reliable systems for manufacturing, chemical processing, food and beverage production, and more. Our utility piping services cover essential systems such as heating, cooling, steam, and compressed air, ensuring your facility operates at peak efficiency. Utilizing advanced materials and technologies, we deliver solutions that are safe, compliant, and built to last, optimizing your operations while reducing costs and downtime."
                 },
                 {
-                    "image": "/images/services-3.webp" ,
+                    "path": "havc-and-clean-room",
+                    "image": "/images/20210123_120350.jpg" ,
+                    "images": ["/images/20210123_120350.jpg", "/images/IMG-20210708-WA0032.jpg"],
                     "title": "HVAC & Clean Room",
-                    "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+                    "description": "At Entech Solutions, we specialize in providing advanced HVAC solutions for pharmaceutical and industrial applications. Our team understands the critical importance of precise climate control in these environments to ensure product integrity, safety, and compliance with stringent industry standards. We design, install, and maintain custom HVAC systems that deliver optimal temperature, humidity, and air quality for manufacturing processes, cleanrooms, laboratories, and storage facilities. Utilizing the latest technologies and energy-efficient practices, we create reliable and scalable HVAC solutions tailored to your specific operational needs, ensuring a controlled and compliant environment for your industrial or pharmaceutical facility."
                 }
             ]
         },
@@ -480,44 +490,55 @@
             {
                 "path": "architectural-civil-and-structural",
                 "image": "/images/services-1.webp" ,
-                "title": "Architectural,Civil & Structural",
-                "description": "A modern high-rise building under construction, showcasing architectural, civil, and structural engineering elements. The scene includes scaffolding, cranes, and a city skyline backdrop."
+                "images": ["/images/archi1.png", "/images/civil-structure-1.jpg", "/images/ELEVATION-333.jpg", "/images/ELEVATION-222424.jpg", 
+                    "/images/PLAN.jpg", "/images/Screenshot (4).png", "/images/Screenshot (8).png", "/images/Screenshot (15).png", "/images/Screenshot (17).png", 
+                    "/images/Screenshot (18).png", "/images/Screenshot (20).png",
+                    "/images/20151024_120931.jpg", "/images/20160210_114316.jpg", "/images/IMG-20170216-WA0032.jpg", "/images/IMG-20170216-WA0034.jpg", "/images/Manufacturing-API-Plant-1-Panelav-Gujarat.jpg"
+                ],
+                "title": "Architectural, Civil & Structural",
+                "description": "At Entech Solutions, we specialize in delivering comprehensive design solutions that integrate architectural innovation, civil engineering precision, and robust structural integrity. Our architectural team brings your vision to life with creative and functional designs that blend aesthetics with practicality. Our civil engineers ensure that every project is meticulously planned and executed, addressing environmental, zoning, and regulatory requirements. Meanwhile, our structural engineers guarantee the safety and durability of your buildings through advanced analysis and cutting-edge materials. Together, we create spaces that are not only visually stunning but also resilient and sustainable."
             },
             {
                 "path": "mechanical-piping",
                 "image": "/images/services-2.webp" ,
+                "images": ["/images/civil-structure-1.jpg"],
                 "title": "Mechanical & Piping",
-                "description": "An industrial setting highlighting mechanical and piping engineering. The image features complex pipe networks, large machinery, and engineers working on equipment with tools and blueprints visible."
+                "description": "At Entech Solutions, we provide comprehensive mechanical process and utility piping solutions tailored to your specific industry requirements. Our experienced team designs, installs, and maintains piping systems that ensure efficient transport of fluids and gases for various industrial processes. We specialize in creating robust and reliable systems for manufacturing, chemical processing, food and beverage production, and more. Our utility piping services cover essential systems such as heating, cooling, steam, and compressed air, ensuring your facility operates at peak efficiency. Utilizing advanced materials and technologies, we deliver solutions that are safe, compliant, and built to last, optimizing your operations while reducing costs and downtime."
             },
             {
                 "path": "havc-and-clean-room",
                 "image": "/images/services-3.webp" ,
+                "images": ["/images/20210123_120350.jpg", "/images/IMG-20210708-WA0032.jpg"],
                 "title": "HVAC & Clean Room",
-                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+                "description": "At Entech Solutions, we specialize in providing advanced HVAC solutions for pharmaceutical and industrial applications. Our team understands the critical importance of precise climate control in these environments to ensure product integrity, safety, and compliance with stringent industry standards. We design, install, and maintain custom HVAC systems that deliver optimal temperature, humidity, and air quality for manufacturing processes, cleanrooms, laboratories, and storage facilities. Utilizing the latest technologies and energy-efficient practices, we create reliable and scalable HVAC solutions tailored to your specific operational needs, ensuring a controlled and compliant environment for your industrial or pharmaceutical facility."
             },
             {
                 "path": "fire-fighting-system",
                 "image": "/images/services-3.webp" ,
+                "images": ["/images/civil-structure-1.jpg"],
                 "title": "Fire Fighting System",
                 "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
             },
             {
                 "path": "electrical",
                 "image": "/images/services-3.webp" ,
+                "images": ["/images/civil-structure-1.jpg"],
                 "title": "Electrical",
-                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+                "description": "At Entech Solutions, we offer comprehensive electrical and Extra-Low Voltage Systems (ELVS) solutions designed to meet the diverse needs of modern buildings and facilities. Our electrical services encompass everything from initial design and installation to ongoing maintenance and upgrades, ensuring your power systems are safe, efficient, and reliable. In addition, our expertise in ELVS covers a wide range of low-voltage applications, including security systems, fire alarms, data networks, and building automation systems. By integrating cutting-edge technology with meticulous planning, we provide robust and scalable solutions that enhance the functionality, safety, and connectivity of your space. Trust us to deliver top-tier electrical and ELVS services that support your operational success."
             },
             {
                 "path": "instrumentation-and-automation",
                 "image": "/images/services-3.webp" ,
+                "images": ["/images/civil-structure-1.jpg"],
                 "title": "Instrumentation & Automation",
-                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+                "description": "At Entech Solutions, we provide specialized instrumentation and automation solutions tailored for the pharmaceutical industry. Our expertise ensures precision, reliability, and compliance with the stringent regulations governing pharmaceutical manufacturing. We design and implement advanced control systems that enhance process accuracy, improve product quality, and increase operational efficiency. Our services include the integration of cutting-edge sensors, control systems, and data analytics to automate and monitor critical processes. With a focus on innovation and quality, we deliver customized solutions that support your production goals, streamline workflows, and ensure the highest standards of safety and consistency in your pharmaceutical operations."
             },
             {
                 "path": "project-management-and-construction",
                 "image": "/images/services-3.webp" ,
+                "images": ["/images/civil-structure-1.jpg"],
                 "title": "Project Management & Construction",
-                "description": "A detailed depiction of HVAC and clean room engineering in an industrial environment. The image shows HVAC units, ventilation ducts, and a controlled clean room with workers in clean suits, air quality monitors"
+                "description": "Project Management & Construction"
             }
         ]
     },

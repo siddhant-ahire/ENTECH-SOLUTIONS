@@ -9,7 +9,7 @@ const ServiceItem = ({id, icon, title, description }) => {
         <div className="icon justify-content-center align-items-center d-flex">
           <span className={icon}></span>
         </div>
-        <div className="media-body pl-4">
+        <div className="media-body pl-4"style={{minHeight: 300}}>
           <h3 className="heading mb-3">{title}</h3>
           <p>{description}</p>
         </div>

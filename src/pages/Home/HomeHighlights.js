@@ -10,20 +10,20 @@ const HomeHighlights = () => {
             <ServiceItem 
                 id={1}
                 icon="flaticon-engineer-1" 
-                title="Quality Construction" 
-                description="A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                title="Vision" 
+                description="To be the engineering and design company of choice, leader in the industry and invaluable asset to our clients. We will be an organization that capitalizes on our strengths, takes advantage of opportunities."
             />
             <ServiceItem 
                 id={2}
                 icon="flaticon-worker-1" 
-                title="Professional Liability" 
-                description="A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                title="Mission" 
+                description="To be the engineering and design company of choice, leader in the industry and invaluable asset to our clients. We will be an organization that capitalizes on our strengths, takes advantage of opportunities."
             />
             <ServiceItem 
                 id={3}
                 icon="flaticon-engineer" 
-                title="Dedicated To Our Clients" 
-                description="A small river named Duden flows by their place and supplies it with the necessary regelialia."
+                title="Quality Policy" 
+                description="To get it right first time, every time and strive to exceed customer expectations whenever possible."
             />
             </div>
         </div>
