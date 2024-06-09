@@ -10273,8 +10273,35 @@ textarea.form-control {
   }
 }
 
+.service-images {
+  height:  700px;
+  width: 1200px;
+}
+
+@media (max-width: 991.98px) {
+  .service-images {
+    height:  500px;
+    width: 900px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-images {
+    height: 400px;
+    width: 700px;
+  }
+}
+
 .popover {
   margin-top: -5px;
   margin-left: 15%;
   min-width: 70%;
+}
+
+.services-wrap .text .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* Number of lines to show */
+  -webkit-box-orient: vertical;
 }
