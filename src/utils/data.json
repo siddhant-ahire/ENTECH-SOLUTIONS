@@ -313,23 +313,42 @@
         "heading": "Latest Projects",
         "cards": [
             {
-                "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
-                "type": "Building",
-                "title": "BUILDING A CONDOMINIUM",
-                "location": " San Francisco, California, USA"
+                "imageUrl": "/images/IMG-20210708-WA0024.jpg",
+                "imageUrls": ["/images/IMG-20210708-WA0024.jpg", "/images/IMG-20210708-WA0025.jpg", "/images/IMG-20210708-WA0032.jpg"],
+                "title": "Acebright",
+                "location": ""
             },
             {
-                "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
-                "date": "Building",
-                "title": "BUILDING A CONDOMINIUM",
-                "location": " San Francisco, California, USA"
+                "imageUrl": "/images/Anthem04.jpg",
+                "imageUrls": ["/images/Anthem04.jpg", "/images/Anthem 14.jpg", "/images/Anthem 17.jpg", "/images/Anthem 19.jpg",
+            "/images/20160929_111132.jpg", "/images/20160929_112705.jpg", "/images/20160929_114241.jpg",
+            "/images/20170131_165602.jpg", "/images/20170201_143828.jpg", "/images/20170201_175241.jpg",
+            "/images/Anthem 19.jpg", "/images/Anthem 26.jpg", "/images/Anthem 28.jpg",
+            "/images/Anthem-After-2.jpg", "/images/Anthem-After.jpg", "/images/Anthem-Before-2.jpg",
+            "/images/Anthem-Before.jpg", "/images/IMG-20170216-WA0025.jpg", "/images/IMG-20170216-WA0033.jpg","/images/IMG-20170216-WA0036.jpg"
+            ],
+                "title": "Anthem",
+                "location": ""
 
             },
             {
-                "image": ["/images/iamge.png", "/images/iamge2.png", "/images/iamge3.png"],
-                "date": "Building",
-                "title": "BUILDING A CONDOMINIUM",
-                "location": " San Francisco, California, USA"
+                "imageUrl": "/images/IMG_20190102_114640.jpg",
+                "imageUrls": ["/images/IMG_20190102_114640.jpg", "/images/IMG_20190207_131901.jpg", "/images/IMG_20190207_132824.jpg", "/images/IMG_20190210_135723.jpg"],
+                "title": "Arkema",
+                "location": ""
+            },
+            {
+                "imageUrl": "/images/20160202_145704.jpg",
+                "imageUrls": ["/images/20160202_145704.jpg", "/images/20160531_152039.jpg", "/images/20160917_103105.jpg", "/images/20160917_103110.jpg","/images/20161114_155303.jpg", "/images/20161114_155309.jpg", "/images/IMG-20180908-WA0015.jpg"],
+                "title": "Cipla",
+                "location": ""
+            },
+            {
+                "imageUrl": "/images/InnovaPharmactive.jpg",
+                "imageUrls": ["/images/InnovaPharmactive.jpg", "/images/Innova Pharmactive API Plant Nagpur (3).jpg", "/images/Innova Pharmactive API Plant Nagpur Clean Room ISO 8.jpg", 
+                "/images/Innova Pharmactive API Plant Nagpur.jpg","/images/Innova Pharmactive API Plant.jpg"],
+                "title": "Innova",
+                "location": ""
             }
         ]
     },  

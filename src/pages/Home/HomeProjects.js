@@ -18,17 +18,11 @@ import HomeCarousel from './HomeCarousel';
 import HomeHighlights from './HomeHighlights';
 import HomeAboutUs from './HomeAboutUs';
 import HomeRequestQuote from './HomeRequestQuote';
+import AllData from '../../utils/data.json'
+
 
 const HomeProjects = () => {
         // Example data array
-        const projects = [
-            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" },
-            { imageUrl: "/images/project-1.jpg", title: "Building A Condominium", location: "San Francisco, California, USA" }
-          ];
   return (
     <>
         <section className="ftco-section">
@@ -40,8 +34,8 @@ const HomeProjects = () => {
           </div>
         </div>
         <div className="row">
-          {projects.map((project, index) => (
-            <Project key={index} imageUrl={project.imageUrl} title={project.title} location={project.location} />
+          {AllData.projects.cards.map((project, index) => (
+            <Project key={index} imageUrl={project.imageUrl} title={project.title} location={project.location} imageUrls={project.imageUrls} />
           ))}
         </div>
       </div>

@@ -191,7 +191,7 @@ const Header = () => {
 
             )}
             <li className={`nav-item  ${pathSegment == 'projects' && 'active'}`}><Link to={"projects"} className="nav-link">Projects</Link></li>
-            <li className={`nav-item  ${pathSegment == 'blogs' && 'active'}`}><Link to={"blogs"} className="nav-link">Blog</Link></li>
+            {/* <li className={`nav-item  ${pathSegment == 'blogs' && 'active'}`}><Link to={"blogs"} className="nav-link">Blog</Link></li> */}
             <li className={`nav-item  ${pathSegment == 'clients' && 'active'}`}><Link to={"clients"} className="nav-link">Clients</Link></li>
             <li className={`nav-item  ${pathSegment == 'career' && 'active'}`}><Link to={"career"} className="nav-link">Career</Link></li>
 

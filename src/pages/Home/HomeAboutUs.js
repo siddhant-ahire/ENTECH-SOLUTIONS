@@ -78,17 +78,17 @@ const HomeAboutUs = () => {
             <div className="col-md-12 heading-section">
               <span className="subheading"><Slide triggerOnce direction='right'>Welcome to Entech Solutions</Slide></span>
               <h2 className="mb-4"><Slide triggerOnce direction='right'>What we do?</Slide></h2>
-              <div className="d-flex about">
-                <div className="icon"><span className="flaticon-hammer"></span></div>
-                <h3><Slide triggerOnce direction='up'>We're in this business since 1975 and We provide the best industrial services</Slide></h3>
-              </div>
-              <p><Slide triggerOnce direction='right'>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</Slide></p>
-              <div className="d-flex video-image align-items-center mt-md-4">
+              {/* <div className="d-flex about"> */}
+                {/* <div className="icon"><span className="flaticon-hammer"></span></div> */}
+                {/* <h3><Slide triggerOnce direction='up'>A premier engineering design and consultancy firm dedicated to transforming innovative concepts into reality.</Slide></h3> */}
+              {/* </div> */}
+              <p><Slide triggerOnce direction='right'>A premier engineering design and consultancy firm dedicated to transforming innovative concepts into reality. With a rich history of delivering exceptional solutions across various industries, we specialize in providing comprehensive design, engineering, and consultancy services tailored to meet the unique needs of our clients. Our team of experienced engineers and consultants is committed to excellence, leveraging cutting-edge technology and best practices to ensure the highest standards of quality and efficiency.</Slide></p>
+              {/* <div className="d-flex video-image align-items-center mt-md-4">
                 <a  href="javascript:void(0)" className="video img d-flex align-items-center justify-content-center" onClick={openModal} style={videoBackgroundImageStyle2}>
                   <span className="fa fa-play-circle"></span>
                 </a>
                 <h4 className="ml-4"><Slide triggerOnce direction='down'>This is how we work on our clients, Watch video</Slide></h4>
-              </div>
+              </div> */}
             </div>
           </div>
 

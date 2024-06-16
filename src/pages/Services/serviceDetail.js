@@ -46,12 +46,14 @@ const ServiceDetail = () => {
         {serviceData.length > 0 && (
           <div className="mx-auto text-center heading-section">
             <h3 className="mb-4">{serviceData[0].title}</h3>
-            <div className="slider-container position-relative">
+            <div className="row mt-5">
+            <div className="slider-container position-relative col-md-6">
               <img src={serviceData[0].images[currentIndex]} className="img-fluid slider-image service-images" alt={`Slide ${currentIndex}`} />
               <div onClick={handlePrev} className="btn slider-control prev-button">&#9664;</div>
               <div onClick={handleNext} className="btn slider-control next-button">&#9654;</div>
             </div>
-            <p className="w-62 mx-auto mt-5">{serviceData[0].description}</p>
+            <p className="w-62 mx-auto col-md-6">{serviceData[0].description}</p>
+            </div>
           </div>
         )}
       </div>

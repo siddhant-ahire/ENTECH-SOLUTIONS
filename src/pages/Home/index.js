@@ -35,9 +35,9 @@ const Home = () => {
         <HomeAboutUs/>
         {/* <HomeRequestQuote/> */}
         <HomeServices/>
-        <HomeCounter/>
+        {/* <HomeCounter/> */}
         <HomeProjects/>
-        <HomeTestimonials/>
+        {/* <HomeTestimonials/> */}
         {/* <HomeBlogs/> */}
         <HomeClients/>
     </div>

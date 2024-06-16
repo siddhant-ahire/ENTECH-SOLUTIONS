@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-const Project = ({ imageUrl, title, location }) => {
-  let imageUrls = [imageUrl, imageUrl]
+const Project = ({ imageUrl, title, location, imageUrls = [] }) => {
+
   const backgroundImageStyle = {
     backgroundImage: `url(${imageUrl})`
   };
@@ -46,7 +46,7 @@ const Project = ({ imageUrl, title, location }) => {
         <div className="text">
           <span className="subheading">Building</span>
           <h3>{title}</h3>
-          <p><span className="fa fa-map-marker mr-1"></span> {location}</p>
+          {/* <p><span className="fa fa-map-marker mr-1"></span> {location}</p> */}
         </div>
       </div>
       {isModalOpen && <Modal imageUrls={imageUrls} />}
