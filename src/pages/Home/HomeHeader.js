@@ -59,9 +59,10 @@ const HomeHeader = () => {
               <div className="social-media">
                 <p className="mb-0 d-flex">
                   <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a>
+                  {/* <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a> */}
                   <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a>
-                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a>
+                  <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-youtube"><i className="sr-only">Youtube</i></span></a>
+                  {/* <a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a> */}
                 </p>
               </div>
             </div>

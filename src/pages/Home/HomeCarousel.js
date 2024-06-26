@@ -57,8 +57,8 @@ const HomeCarousel = () => {
     <div className="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
       <div className="col-lg-6">
         <div className="mt-5">
-        <Slide triggerOnce direction='left'><h1 className="mb-4">We Build <br/>Great Projects</h1></Slide>
-        <Slide triggerOnce direction='right'><p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p></Slide>
+        <Slide triggerOnce direction='left'><h1 className="mb-4">ENTECH SOLUTIONS</h1></Slide>
+        {/* <Slide triggerOnce direction='right'><p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p></Slide> */}
           <p>
           <Slide triggerOnce direction='up'><Link to={"services"}  className="btn btn-primary mr-2">Our Services</Link></Slide>
             {/* <a href="#" className="btn btn-white" data-toggle="modal" data-target="#exampleModalCenter">Request A Quote</a> */}

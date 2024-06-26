@@ -540,8 +540,11 @@
             },
             {
                 "path": "electrical",
-                "image": "/images/services-3.webp" ,
-                "images": ["/images/civil-structure-1.jpg"],
+                "image": "/images/Electrical01.jpeg" ,
+                "images": ["/images/Electrical01.jpeg", "/images/Electrical02.jpeg", "/images/Electrical03.jpeg", 
+                "/images/Electrical04.jpeg", "/images/Electrical05.jpeg", "/images/Electrical06.jpeg",
+                "/images/Electrical07.jpeg", "/images/Electrical08.jpeg"
+            ],
                 "title": "Electrical",
                 "description": "At Entech Solutions, we offer comprehensive electrical and Extra-Low Voltage Systems (ELVS) solutions designed to meet the diverse needs of modern buildings and facilities. Our electrical services encompass everything from initial design and installation to ongoing maintenance and upgrades, ensuring your power systems are safe, efficient, and reliable. In addition, our expertise in ELVS covers a wide range of low-voltage applications, including security systems, fire alarms, data networks, and building automation systems. By integrating cutting-edge technology with meticulous planning, we provide robust and scalable solutions that enhance the functionality, safety, and connectivity of your space. Trust us to deliver top-tier electrical and ELVS services that support your operational success."
             },
@@ -558,6 +561,18 @@
                 "images": ["/images/civil-structure-1.jpg"],
                 "title": "Project Management & Construction",
                 "description": "Project Management & Construction"
+            },
+            {
+                "path": "3d-modelling",
+                "image": "/images/3D-1.JPG" ,
+                "images": [
+                    "/images/3D-1.JPG", "/images/3D-2.JPG", "/images/3D-3.JPG", "/images/3D-4.JPG",
+                    "/images/3D-5.JPG", "/images/3D-6.JPG", "/images/3D-7.JPG", "/images/3D-8.JPG",
+                    "/images/3D-9.JPG", "/images/3D-10.JPG", "/images/3D-11.JPG", "/images/3D-12.JPG"
+            
+                ],
+                "title": "3D Modelling",
+                "description": "At Entech Solutions, we offer specialized 3D modeling solutions tailored for the pharmaceutical industry. Our expertise ensures precision, reliability, and compliance with the stringent regulations governing pharmaceutical manufacturing. We design and implement advanced 3D models that enhance process visualization, improve product design, and increase operational efficiency. Our services include the integration of cutting-edge 3D scanning, modeling software, and data analytics to create detailed and accurate representations of critical processes and equipment. With a focus on innovation and quality, we deliver customized 3D modeling solutions that support your production goals, streamline workflows, and ensure the highest standards of safety and consistency in your pharmaceutical operations."
             }
         ]
     },

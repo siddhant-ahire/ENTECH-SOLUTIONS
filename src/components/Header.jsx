@@ -98,13 +98,14 @@ const Header = () => {
                 <Slide triggerOnce direction='left'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-facebook"><i className="sr-only">Facebook</i></span></a></Slide>
                 <Slide triggerOnce direction='right'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-twitter"><i className="sr-only">Twitter</i></span></a></Slide>
                 <Slide triggerOnce direction='up'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-instagram"><i className="sr-only">Instagram</i></span></a></Slide>
-                <Slide triggerOnce direction='down'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a></Slide>
+                <Slide triggerOnce direction='up'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-youtube"><i className="sr-only">Youtube</i></span></a></Slide>
+                {/* <Slide triggerOnce direction='down'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a></Slide> */}
                 </p>
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
               <p className="mb-0 register-link">
-              <Slide triggerOnce direction='right'><button className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</button></Slide>
+              <Slide triggerOnce direction='right'><Link to={"/contact-us"} className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inquire Now</Link></Slide>
               </p>
             </div>
           </div>
