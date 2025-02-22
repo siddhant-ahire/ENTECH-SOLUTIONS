@@ -1,88 +1,103 @@
-import React, { useEffect, useState, useRef } from 'react';
-import ServiceItem from '../../components/ServiceItem';
-import ServiceItem2 from '../../components/ServiceItem2';
-import Counter from '../../components/Counter';
-import Project from '../../components/Project';
-// In your component or App.js
+import React, { useEffect, useState } from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import TestimonialItem from '../../components/TestimonialItem';
-import Slider from 'react-slick';
-import BlogEntry from '../../components/BlogEntry';
-import CustomSlider from '../../components/CustomSlider';
-import Button from 'react-bootstrap/Button';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Popover from 'react-bootstrap/Popover';
-import HomeHeader from './HomeHeader';
 import { Link } from 'react-router-dom';
-import AllData from '../../utils/data.json'
 import { Slide } from 'react-awesome-reveal';
+import useWebsiteStore from '../../store/websiteStore';
 
 const HomeCarousel = () => {
-    const images = AllData?.homepage?.banner_section?.images;
-      const [currentIndex, setCurrentIndex] = useState(0);
-      useEffect(() => {
-        if(document &&  document.getElementById('ftco-loader')){
-        document.getElementById('ftco-loader').style.display='none'
-        }
-        const intervalId = setInterval(() => {
-          setCurrentIndex(current => (current + 1) % images.length);
-        }, 5000); // Change image every 5000 ms (5 seconds)
-    
-        return () =>{
-          clearInterval(intervalId); // Cleanup interval on component unmount
-        } 
-        
-      }, []); // Empty dependency array means this effect runs only once after the initial render
-      const backgroundImageStyle = {
-        backgroundImage: `url(${images[currentIndex]})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed'
-      };
-      const nextImage = () => {
-        setCurrentIndex(current => (current + 1) % images.length);
-      };
-    
-      const prevImage = () => {
-        setCurrentIndex(current => (current - 1 + images.length) % images.length);
-      };
-    
+  const { website } = useWebsiteStore();
+  const [images, setImages] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Extract image URLs when `website` updates
+  useEffect(() => {
+    if (website?.website_banner_images) {
+      const imageUrls = website.website_banner_images.map(
+        (image) => `${process.env.REACT_APP_DOC_URL}${image.url}`
+      );
+      setImages(imageUrls);
+    }
+  }, [website]);
+
+  useEffect(() => {
+    if (document?.getElementById('ftco-loader')) {
+      document.getElementById('ftco-loader').style.display = 'none';
+    }
+  }, []);
+
+  // Start auto-slide only when images are available
+  useEffect(() => {
+    if (images.length === 0) return;
+
+    const intervalId = setInterval(() => {
+      setCurrentIndex(current => (current + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [images]); // Updated dependency
+
+  const nextImage = () => {
+    setCurrentIndex(current => (current + 1) % images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentIndex(current => (current - 1 + images.length) % images.length);
+  };
+
   return (
     <>
-        <section className="hero-wrap js-fullheight" style={backgroundImageStyle} data-stellar-background-ratio="0.5">
-  <div className="overlay"></div>
-  <div className="container">
-    <div className="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
-      <div className="col-lg-6">
-        <div className="mt-5">
-        <Slide triggerOnce direction='left'><h1 className="mb-4">ENTECH SOLUTIONS</h1></Slide>
-        {/* <Slide triggerOnce direction='right'><p className="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove.</p></Slide> */}
-          <p>
-          <Slide triggerOnce direction='up'><Link to={"services"}  className="btn btn-primary mr-2">Our Services</Link></Slide>
-            {/* <a href="#" className="btn btn-white" data-toggle="modal" data-target="#exampleModalCenter">Request A Quote</a> */}
-          </p>
-        </div>
-      </div>
-    </div>
-    {/* New div for buttons with flex styles */}
-    <div style={{
-      position: 'absolute', 
-      top: '50%', 
-      left: 0, 
-      right: 0, 
-      display: 'flex', 
-      justifyContent: 'space-between', 
-      width: '100%'
-    }}>
-      <button onClick={prevImage} className="btn btn-arrow-left" style={{ marginLeft: '10px' }}><i className='fa fa-chevron-left mr-2 text-white'></i></button>
-      <button onClick={nextImage} className="btn btn-arrow-right" style={{ marginRight: '10px' }}><i className='fa fa-chevron-right mr-2 text-white'></i></button>
-    </div>
-  </div>
-</section>
-    </>
-  )
-}
+      {images.length > 0 && (
+        <section className="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
+          <img
+            src={images[currentIndex]}
+            crossOrigin="anonymous"
+            alt="carousel"
+            style={{
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              zIndex: -1
+            }}
+          />
+          <div className="overlay"></div>
+          <div className="container">
+            <div className="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+              <div className="col-lg-6">
+                <div className="mt-5">
+                  <Slide triggerOnce direction='left'>
+                    <h1 className="mb-4">ENTECH SOLUTIONS</h1>
+                  </Slide>
+                  <Slide triggerOnce direction='up'>
+                    <Link to={"services"} className="btn btn-primary mr-2">Our Services</Link>
+                  </Slide>
+                </div>
+              </div>
+            </div>
 
-export default HomeCarousel
+            {/* Navigation Buttons */}
+            <div style={{
+              position: 'absolute',
+              top: '50%',
+              left: 0,
+              right: 0,
+              display: 'flex',
+              justifyContent: 'space-between',
+              width: '100%'
+            }}>
+              <button onClick={prevImage} className="btn btn-arrow-left" style={{ marginLeft: '10px' }}>
+                <i className='fa fa-chevron-left mr-2 text-white'></i>
+              </button>
+              <button onClick={nextImage} className="btn btn-arrow-right" style={{ marginRight: '10px' }}>
+                <i className='fa fa-chevron-right mr-2 text-white'></i>
+              </button>
+            </div>
+          </div>
+        </section>
+      )}
+    </>
+  );
+};
+
+export default HomeCarousel;
