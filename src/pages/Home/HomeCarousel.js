@@ -67,10 +67,11 @@ const HomeCarousel = () => {
               <div className="col-lg-6">
                 <div className="mt-5">
                   <Slide triggerOnce direction='left'>
-                    <h1 className="mb-4">ENTECH SOLUTIONS</h1>
+                    <h1 className="mb-4">{website?.website_banner_title}</h1>
+                    <p>{website?.website_banner_pargraph}</p>
                   </Slide>
                   <Slide triggerOnce direction='up'>
-                    <Link to={"services"} className="btn btn-primary mr-2">Our Services</Link>
+                    <Link to={"services"} className="btn btn-primary mr-2">{website?.website_banner_button_text}</Link>
                   </Slide>
                 </div>
               </div>
