@@ -1,8 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
 import AllData from '../../utils/data.json'
+import useWebsiteStore from '../../store/websiteStore';
 
 const Index = () => {
+  const { website } = useWebsiteStore();
 
   const settings = {
     dots: true,
@@ -40,15 +42,17 @@ const Index = () => {
           </div>
         </div>
         <div className="">
+        {website?.websiteClients[0] && Array.isArray(website?.websiteClients[0]?.website_clients_images) && 
           <Slider {...settings}>
-          {AllData.homepage.clients.images.map(client => (
-              <div key={client.image}>
+          {website?.websiteClients[0]?.website_clients_images.map(client => (
+              <div key={client?.website_clients_id}>
                 <div className="card ml-4 mr-4">
-                  <img src={client.image} className="card-img-top rounded" alt={client.name} />
+                  <img src={process.env.REACT_APP_DOC_URL + client.url} className="card-img-top rounded" alt={client.website_clients_title} crossOrigin='anonymous' />
                 </div>
               </div>
             ))}
           </Slider>
+        }
         </div>
       </div>
     </section>

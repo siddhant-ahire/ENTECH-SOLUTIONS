@@ -19,10 +19,12 @@ import HomeHighlights from './HomeHighlights';
 import HomeAboutUs from './HomeAboutUs';
 import HomeRequestQuote from './HomeRequestQuote';
 import AllData from '../../utils/data.json'
+import useWebsiteStore from '../../store/websiteStore';
 
 
 const HomeProjects = () => {
-        // Example data array
+  const { website } = useWebsiteStore();
+
   return (
     <>
         <section className="ftco-section">
@@ -34,8 +36,13 @@ const HomeProjects = () => {
           </div>
         </div>
         <div className="row">
-          {AllData.projects.cards.map((project, index) => (
-            <Project key={index} imageUrl={project.imageUrl} title={project.title} location={project.location} imageUrls={project.imageUrls} />
+          {Array.isArray(website?.websiteProjects) && website.websiteProjects.map((project, index) => (
+            <Project 
+            key={index} 
+            imageUrl={Array.isArray(project?.website_projects_images) && `${process.env.REACT_APP_DOC_URL}${project?.website_projects_images[0]?.url}`} 
+            title={project?.website_projects_title} 
+            location={project?.website_projects_id} 
+            imageUrls={Array.isArray(project?.website_projects_images) && project?.website_projects_images.map(image => `${process.env.REACT_APP_DOC_URL}${image.url}`)} />
           ))}
         </div>
       </div>

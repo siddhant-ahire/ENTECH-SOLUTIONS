@@ -19,8 +19,11 @@ import HomeHighlights from './HomeHighlights';
 import HomeAboutUs from './HomeAboutUs';
 import HomeRequestQuote from './HomeRequestQuote';
 import AllData from '../../utils/data.json'
+import useWebsiteStore from '../../store/websiteStore';
 
 const HomeServices = () => {
+  const { website } = useWebsiteStore();
+
   return (
     <>
         <section className="ftco-section bg-half-light">
@@ -32,13 +35,13 @@ const HomeServices = () => {
           </div>
         </div>
         <div className="row">
-        {AllData.homepage.services.cards.map((item) => (
+        {Array.isArray(website?.websiteServices) && website.websiteServices.map((item) => (
           <ServiceItem2 
-          backgroundUrl={item.image}
+          backgroundUrl={Array.isArray(item?.website_services_images) && `${process.env.REACT_APP_DOC_URL}${item?.website_services_images[0]?.url}`}
           icon="flaticon-architect" 
-          title={item.title}
-          description={item.description}
-          path={item.path}
+          title={item.website_services_title}
+          description={item.website_services_description}
+          path={item.website_services_id}
         />
         ))}
         </div>

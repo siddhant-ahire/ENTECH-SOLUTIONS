@@ -19,7 +19,12 @@ const useWebsiteStore = create((set) => ({
       website_banner_about_us_title2: "",
       website_banner_about_us_pargraph: "",
       website_banner_images: [],
-      website_banner_cards: []
+      website_banner_cards: [],
+      websiteServices: [],
+      websiteProjects: [],
+      websiteClients: [],
+      websiteAboutUs: {},
+      websiteFooter: {},
   },
   setWebsite: (website) => set({ website }),
 }));

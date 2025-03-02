@@ -24,9 +24,11 @@ import HomeProjects from './HomeProjects';
 import HomeTestimonials from './HomeTestimonials';
 import HomeBlogs from './HomeBlogs';
 import HomeClients from './HomeClients';
+import useWebsiteStore from '../../store/websiteStore';
 
 
 const Home = () => {
+  const { website } = useWebsiteStore();
 
   return (
     <div>
@@ -39,7 +41,9 @@ const Home = () => {
         <HomeProjects/>
         {/* <HomeTestimonials/> */}
         {/* <HomeBlogs/> */}
-        <HomeClients/>
+        {website?.websiteClients?.length > 0 &&
+          <HomeClients/>
+        }
     </div>
   );
 };

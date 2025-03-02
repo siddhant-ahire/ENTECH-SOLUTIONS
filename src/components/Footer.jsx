@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import AllData from "../utils/data.json";
+import useWebsiteStore from '../store/websiteStore';
 
 const Footer = () => {
+  const { website } = useWebsiteStore();
+
   return (
     <>
         <footer className="ftco-footer">
@@ -11,12 +14,12 @@ const Footer = () => {
           <div className="col-lg col-md-6">
             <div className="ftco-footer-widget">
               <h2 className="ftco-heading-2 d-flex align-items-center">About</h2>
-              <p>{AllData.footer.about_text} <br></br> {AllData.footer.about_text2}</p>
+              <p>{website?.websiteFooter?.website_footer_about_text} <br></br> {website?.websiteFooter?.website_footer_about_text2}</p>
               <ul className="ftco-footer-social list-unstyled mt-4">
-                <li><a href="#"><span className="fa fa-twitter"></span></a></li>
-                <li><a href="#"><span className="fa fa-facebook"></span></a></li>
-                <li><a href="#"><span className="fa fa-instagram"></span></a></li>
-                <li><a href="#"><span className="fa fa-youtube"></span></a></li>
+                <li><a href={website?.websiteFooter?.website_footer_twitter}><span className="fa fa-twitter"></span></a></li>
+                <li><a href={website?.websiteFooter?.website_footer_facebook}><span className="fa fa-facebook"></span></a></li>
+                <li><a href={website?.websiteFooter?.website_footer_instagram}><span className="fa fa-instagram"></span></a></li>
+                <li><a href={website?.websiteFooter?.website_footer_youtube}><span className="fa fa-youtube"></span></a></li>
               </ul>
             </div>
           </div>
@@ -45,8 +48,8 @@ const Footer = () => {
             <div className="ftco-footer-widget">
               <h2 className="ftco-heading-2">Services</h2>
               <ul className="list-unstyled">
-                {AllData.footer.services.map(v => {
-                   return <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>{v}</a></li>
+                {Array.isArray(website?.websiteServices) && website?.websiteServices?.map(v => {
+                   return <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>{v?.website_services_title}</a></li>
                 })}
               </ul>
             </div>
@@ -57,9 +60,9 @@ const Footer = () => {
               <h2 className="ftco-heading-2">Have a Questions?</h2>
               <div className="block-23 mb-3">
                 <ul>
-                  <li><span className="fa fa-map-marker mr-3"></span><span className="text">{AllData.footer.address}</span></li>
-                  <li><a href="#"><span className="fa fa-phone mr-3"></span><span className="text">{AllData.footer.phone}</span></a></li>
-                  <li><a href="#"><span className="fa fa-paper-plane mr-3"></span><span className="text">{AllData.footer.email} {AllData.footer.email2}</span></a></li>
+                  <li><span className="fa fa-map-marker mr-3"></span><span className="text">{website?.websiteFooter?.website_footer_address}</span></li>
+                  <li><a href="#"><span className="fa fa-phone mr-3"></span><span className="text">{website?.websiteFooter?.website_footer_phone_number}</span></a></li>
+                  <li><a href="#"><span className="fa fa-paper-plane mr-3"></span><span className="text">{website?.websiteFooter?.website_footer_email} {website?.websiteFooter?.website_footer_email2}</span></a></li>
                   
                 </ul>
               </div>
@@ -72,7 +75,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-6 aside-stretch py-3">
               <p className="mb-0">
-                Copyright &copy;2024 ENTECH SOLUTIONS. All rights reserved
+                {website?.websiteFooter?.website_footer_copyright}
               </p>
             </div>
           </div>
