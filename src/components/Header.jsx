@@ -31,15 +31,19 @@ const Header = () => {
       {/* <Popover.Header as="h3">Popover right</Popover.Header> */}
       <Popover.Body className="d-flex justify-content-center">
         <div className="d-flex flex-wrap">
-          {AllData.services.cards.map((v, index) => {
+        { Array.isArray(website?.websiteServices) && website?.websiteServices.map((v, index) => {
             return (
               <Link
-                className={`m-3 ${pathSegment2 == v.path && "active"}`}
-                to={`/services/${v.path}`}
+                className={`m-3 ${
+                  pathSegment2 == v.website_services_title && "active"
+                }`}
+                to={`/services/${v.website_services_title}`}
                 style={{
                   cursor: "pointer",
                   color: `${
-                    pathSegment2 == v.path ? "var(--websitetheme)" : "initial"
+                    pathSegment2 == v.website_services_title
+                      ? "var(--websitetheme)"
+                      : "initial"
                   }`,
                   transition: "color 0.3s ease",
                 }}
@@ -49,7 +53,7 @@ const Header = () => {
                 }
                 onMouseLeave={(e) => (e.target.style.color = "initial")}
               >
-                &#x2022; {v.title}
+                &#x2022; {v.website_services_title}
               </Link>
             );
           })}
@@ -287,19 +291,20 @@ const Header = () => {
                           </a>
                           <Collapse in={open}>
                             <ul style={{ listStyleType: "square" }}>
-                              {AllData.services.cards.map((v, index) => {
+                              { Array.isArray(website?.websiteServices) && website?.websiteServices.map((v, index) => {
                                 return (
                                   <li
                                     className={`mb-3 ${
-                                      pathSegment2 == v.path && "active"
+                                      pathSegment2 == v.website_services_title
+                                      && "active"
                                     }`}
                                   >
                                     <Link
-                                      to={`/services/${v.path}`}
+                                      to={`/services/${v.website_services_title}`}
                                       style={{
                                         cursor: "pointer",
                                         color: `${
-                                          pathSegment2 == v.path
+                                          pathSegment2 == v.website_services_title
                                             ? "var(--websitetheme)"
                                             : "gray"
                                         }`,
@@ -308,7 +313,7 @@ const Header = () => {
                                       // onMouseEnter={(e) => e.target.style.color = 'var(--websitetheme)'}
                                       // onMouseLeave={(e) => e.target.style.color = 'initial'}
                                     >
-                                      {v.title}
+                                      {v.website_services_title}
                                     </Link>
                                   </li>
                                 );

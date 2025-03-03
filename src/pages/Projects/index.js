@@ -1,12 +1,33 @@
 import React from 'react'
-import HomeProjects from '../Home/HomeProjects'
+import useWebsiteStore from '../../store/websiteStore';
+import Project from '../../components/Project';
+const Index = () => {
+  const { website } = useWebsiteStore();
 
-const index = () => {
   return (
-    <>
-        <HomeProjects/>
-    </>
+<>
+        <section className="ftco-section">
+      <div className="container">
+        <div className="row justify-content-center mb-5 pb-3">
+          <div className="col-md-7 text-center heading-section">
+            <span className="subheading">Our Global Work Industries</span>
+            <h2 className="mb-4">Latest Projects</h2>
+          </div>
+        </div>
+        <div className="row">
+          {Array.isArray(website?.websiteProjects) && website.websiteProjects.map((project, index) => (
+            <Project 
+            key={index} 
+            imageUrl={Array.isArray(project?.website_projects_images) && `${process.env.REACT_APP_DOC_URL}${project?.website_projects_images[0]?.url}`} 
+            title={project?.website_projects_title} 
+            location={project?.website_projects_id} 
+            imageUrls={Array.isArray(project?.website_projects_images) && project?.website_projects_images.map(image => `${process.env.REACT_APP_DOC_URL}${image.url}`)} />
+          ))}
+        </div>
+      </div>
+    </section>
+    </>    
   )
 }
 
-export default index
+export default Index

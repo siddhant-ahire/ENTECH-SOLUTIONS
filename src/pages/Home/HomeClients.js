@@ -42,12 +42,12 @@ const Index = () => {
           </div>
         </div>
         <div className="">
-        {website?.websiteClients[0] && Array.isArray(website?.websiteClients[0]?.website_clients_images) && 
+        {website?.websiteClients && Array.isArray(website?.websiteClients) && 
           <Slider {...settings}>
-          {website?.websiteClients[0]?.website_clients_images.map(client => (
+          {website?.websiteClients?.filter(client => client?.website_clients_show_on_homepage)?.map(client => (
               <div key={client?.website_clients_id}>
                 <div className="card ml-4 mr-4">
-                  <img src={process.env.REACT_APP_DOC_URL + client.url} className="card-img-top rounded" alt={client.website_clients_title} crossOrigin='anonymous' />
+                  <img src={process.env.REACT_APP_DOC_URL + client.website_clients_image} className="card-img-top rounded" alt={client.website_clients_title} crossOrigin='anonymous' />
                 </div>
               </div>
             ))}

@@ -36,7 +36,7 @@ const HomeProjects = () => {
           </div>
         </div>
         <div className="row">
-          {Array.isArray(website?.websiteProjects) && website.websiteProjects.map((project, index) => (
+          {Array.isArray(website?.websiteProjects)   && website.websiteProjects?.filter(project => project?.website_projects_show_on_homepage).map((project, index) => (
             <Project 
             key={index} 
             imageUrl={Array.isArray(project?.website_projects_images) && `${process.env.REACT_APP_DOC_URL}${project?.website_projects_images[0]?.url}`} 

@@ -1,9 +1,11 @@
 import React, { useEffect, useState, useRef } from 'react';
 import AllData from '../../utils/data.json'
 import { Bounce, Slide } from 'react-awesome-reveal';
+import useWebsiteStore from '../../store/websiteStore';
 
 
-const index = () => {
+const Index = () => {
+  const { website } = useWebsiteStore();
 
   return (
     <>
@@ -17,11 +19,11 @@ const index = () => {
         </div>
         <div className="container mt-4">
       <div className="row">
-        {AllData.clients.images.map((client, index) => (
-          <div className="col-sm-12 col-md-4 col-lg-3 mb-4" key={client.image}>
+        {website?.websiteClients && Array.isArray(website?.websiteClients) && website.websiteClients.map((client, index) => (
+          <div className="col-sm-12 col-md-4 col-lg-3 mb-4" key={client?.website_clients_id}>
               <Bounce  >
                 <div className="card">
-                  <img src={client.image} className="card-img-top rounded" alt={client.name} />
+                  <img src={ process.env.REACT_APP_DOC_URL + client?.website_clients_image} className="card-img-top rounded" alt={client?.website_clients_title} crossOrigin='anonymous' />
                   {/* <div className="card-body">
                     <h5 className="card-title">{client.name}</h5>
                   </div> */}
@@ -37,4 +39,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
