@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import useWebsiteStore from './store/websiteStore';
 
 const App = () => {
-  const [isMaintenanceMode, setIsMaintenanceMode] = useState(false);
+  const [isMaintenanceMode, setIsMaintenanceMode] = useState(true);
 
   useEffect(() => {
     // get website data with api call

@@ -1,94 +1,81 @@
 import React, { useState } from 'react';
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState({ website_contact_name: '', website_contact_email: '', website_contact_message: '' });
+  const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const validate = () => {
+    let tempErrors = {};
+
+    if (!formData.website_contact_name.trim()) tempErrors.website_contact_name = 'Name is required';
+    if (!formData.website_contact_email.trim()) tempErrors.website_contact_email = 'Email is required';
+    else if (!/^\S+@\S+\.\S+$/.test(formData.website_contact_email))
+      tempErrors.website_contact_email = 'Invalid website_contact_email format';
+    if (!formData.website_contact_message.trim()) tempErrors.website_contact_message = 'Message is required';
+
+    setErrors(tempErrors);
+    return Object.keys(tempErrors).length === 0;
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData); // For now, just log data to the console.
-    // Here you would typically send the data to a server or email service.
+    if (!validate()) return;
+
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(process.env.REACT_APP_API_URL + '/api/v1/website-contacts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('Message Sent!');
+        setFormData({ website_contact_name: '', website_contact_email: '', website_contact_message: '' });
+      } else {
+        alert('Failed to send message');
+      }
+    } catch (error) {
+      alert('Error submitting form');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <section className="ftco-section bg-light">
-    <div className="container">
-      <div className="row justify-content-center mb-5 pb-2">
-        <div className="col-md-8 text-center heading-section">
-          <span className="subheading">Contact</span>
-          <h2 className="mb-4">Contact Us</h2>
-        </div>
-      </div>
-    <div className="container mt-5 mb-5">
-      <div className="row">
-        <div className="col-md-6">
-          <div id="map-container">
-            <iframe
-              title="Our Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60363.134342313366!2d73.07315729281333!3d18.98903315420793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e83e1f23f23d%3A0xe3a106c431e3fd0a!2sPanvel%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1719431580581!5m2!1sen!2sin"
-              width="100%"
-              height="450"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+      <div className="container">
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label htmlFor="website_contact_name" className="form-label">Name</label>
+            <input type="text" className="form-control" id="website_contact_name" name="website_contact_name" value={formData.website_contact_name} onChange={handleChange} />
+            {errors.website_contact_name && <p className="text-danger">{errors.website_contact_name}</p>}
           </div>
-        </div>
-        <div className="col-md-6">
-          <form onSubmit={handleSubmit}>
-            <div className="mb-3">
-              <label htmlFor="name" className="form-label">Name</label>
-              <input
-                type="text"
-                className="form-control"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="email" className="form-label">Email</label>
-              <input
-                type="email"
-                className="form-control"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="message" className="form-label">Message</label>
-              <textarea
-                className="form-control"
-                id="message"
-                name="message"
-                rows="3"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
-            </div>
-            <button type="submit" className="btn btn-primary">Send</button>
-          </form>
-        </div>
+          
+          <div className="mb-3">
+            <label htmlFor="website_contact_email" className="form-label">Email</label>
+            <input type="website_contact_email" className="form-control" id="website_contact_email" name="website_contact_email" value={formData.website_contact_email} onChange={handleChange} />
+            {errors.website_contact_email && <p className="text-danger">{errors.website_contact_email}</p>}
+          </div>
+          
+          <div className="mb-3">
+            <label htmlFor="website_contact_message" className="form-label">Message</label>
+            <textarea className="form-control" id="website_contact_message" name="website_contact_message" rows="3" value={formData.website_contact_message} onChange={handleChange}></textarea>
+            {errors.website_contact_message && <p className="text-danger">{errors.website_contact_message}</p>}
+          </div>
+
+          <button type="submit" className="btn btn-primary" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Send'}
+          </button>
+        </form>
       </div>
-    </div>
-    </div>
     </section>
   );
 };
