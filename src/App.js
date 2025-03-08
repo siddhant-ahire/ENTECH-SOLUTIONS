@@ -16,20 +16,20 @@ const App = () => {
         const response = await fetch(`${process.env.REACT_APP_API_URL}/api/v1/website`);
         const data = await response.json();
         useWebsiteStore.setState({ website: data?.data });
-        localStorage.setItem("websiteData", JSON.stringify(data?.data));
+        // localStorage.setItem("websiteData", JSON.stringify(data?.data));
       } catch (error) {
         console.error('Error fetching website data:', error);
       }
     };
-    const cachedData = localStorage.getItem("websiteData");
-    if (cachedData) {
-      useWebsiteStore.setState({ website: JSON.parse(cachedData) });
-    } else {
+    // const cachedData = localStorage.getItem("websiteData");
+    // if (cachedData) {
+    //   useWebsiteStore.setState({ website: JSON.parse(cachedData) });
+    // } else {
     websiteAPI();
-    }
-    return () => {
-      localStorage.removeItem("websiteData");
-    };
+    // }
+    // return () => {
+    //   localStorage.removeItem("websiteData");
+    // };
   }, []);
 
   return (
