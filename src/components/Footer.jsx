@@ -68,10 +68,9 @@ const Footer = () => {
                   <li><Link to="projects"><span className="fa fa-chevron-right mr-2"></span>Project</Link></li>
                   <li><Link to="about-us"><span className="fa fa-chevron-right mr-2"></span>About Us</Link></li>
                   <li><Link to="services"><span className="fa fa-chevron-right mr-2"></span>Services</Link></li>
-                  <li><Link to="blogs"><span className="fa fa-chevron-right mr-2"></span>Blog Posts</Link></li>
+                  <li><Link to="clients"><span className="fa fa-chevron-right mr-2"></span>Clients</Link></li>
                 </ul>
                 <ul className="list-unstyled ml-md-5">
-                  <li><Link to="clients"><span className="fa fa-chevron-right mr-2"></span>Clients</Link></li>
                   <li><Link to="contact-us"><span className="fa fa-chevron-right mr-2"></span>Contact</Link></li>
                   <li><Link to="career"><span className="fa fa-chevron-right mr-2"></span>Career</Link></li>
 
@@ -85,7 +84,7 @@ const Footer = () => {
               <h2 className="ftco-heading-2">Services</h2>
               <ul className="list-unstyled">
                 {Array.isArray(website?.websiteServices) && website?.websiteServices?.map(v => {
-                   return <li><a href="#"><span className="fa fa-chevron-right mr-2"></span>{v?.website_services_title}</a></li>
+                   return <li><a href={`/services/${v?.website_services_title}`}><span className="fa fa-chevron-right mr-2"></span>{v?.website_services_title}</a></li>
                 })}
               </ul>
             </div>
