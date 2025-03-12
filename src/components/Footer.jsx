@@ -16,11 +16,47 @@ const Footer = () => {
               <h2 className="ftco-heading-2 d-flex align-items-center">About</h2>
               <p>{website?.websiteFooter?.website_footer_about_text} <br></br> {website?.websiteFooter?.website_footer_about_text2}</p>
               <ul className="ftco-footer-social list-unstyled mt-4">
-                <li><a href={website?.websiteFooter?.website_footer_twitter}><span className="fa fa-twitter"></span></a></li>
-                <li><a href={website?.websiteFooter?.website_footer_facebook}><span className="fa fa-facebook"></span></a></li>
-                <li><a href={website?.websiteFooter?.website_footer_instagram}><span className="fa fa-instagram"></span></a></li>
-                <li><a href={website?.websiteFooter?.website_footer_youtube}><span className="fa fa-youtube"></span></a></li>
+                {website?.websiteFooter?.website_footer_twitter && (
+                  <li>
+                    <a href={website.websiteFooter.website_footer_twitter}>
+                      <span className="fa fa-twitter"></span>
+                    </a>
+                  </li>
+                )}
+
+                {website?.websiteFooter?.website_footer_facebook && (
+                  <li>
+                    <a href={website.websiteFooter.website_footer_facebook}>
+                      <span className="fa fa-facebook"></span>
+                    </a>
+                  </li>
+                )}
+
+                {website?.websiteFooter?.website_footer_instagram && (
+                  <li>
+                    <a href={website.websiteFooter.website_footer_instagram}>
+                      <span className="fa fa-instagram"></span>
+                    </a>
+                  </li>
+                )}
+
+                {website?.websiteFooter?.website_footer_youtube && (
+                  <li>
+                    <a href={website.websiteFooter.website_footer_youtube}>
+                      <span className="fa fa-youtube"></span>
+                    </a>
+                  </li>
+                )}
+
+                {website?.websiteFooter?.website_footer_linkedin && (
+                  <li>
+                    <a href={website.websiteFooter.website_footer_linkedin}>
+                      <span className="fa fa-linkedin"></span>
+                    </a>
+                  </li>
+                )}
               </ul>
+
             </div>
           </div>
 

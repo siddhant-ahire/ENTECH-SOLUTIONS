@@ -41,7 +41,7 @@ const HomeServices = () => {
           icon="flaticon-architect" 
           title={item.website_services_title}
           description={item.website_services_description}
-          path={item.website_services_id}
+          path={item.website_services_title}
         />
         ))}
         </div>

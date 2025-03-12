@@ -6,21 +6,33 @@ const ServiceDetail = () => {
   const { website } = useWebsiteStore();
   const [currentIndex, setCurrentIndex] = useState(0)
   const { id } = useParams();
-  const serviceData = website?.websiteServices.filter(card => card.website_services_title === id) || [];
+  const [serviceData, setServiceData] = useState([]);
 
   const handleNext = () => {
-    setCurrentIndex(prevIndex => (prevIndex === serviceData[0].website_services_images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex(prevIndex => {
+      const maxIndex = serviceData[0].website_services_images.length - 1;
+      if (prevIndex < 0) return 0; // Ensure it doesn't go negative
+      if (prevIndex >= maxIndex) return 0; // Loop back if at the last index
+      return prevIndex + 1;
+    });
   };
   // Function to go to the next slide
 
   const nextSlide = () => {
-    setCurrentIndex(prevIndex => (prevIndex === serviceData[0].website_services_images.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex(prevIndex => {
+      const maxIndex = serviceData[0]?.website_services_images?.length - 1 || 0;
+      if (prevIndex < 0) return 0; // Ensure it doesn't go negative
+      if (prevIndex >= maxIndex) return 0; // Loop back if at the last index
+      return prevIndex + 1;
+    });
   };
-
   const handlePrev = () => {
-    setCurrentIndex(prevIndex => (prevIndex === 0 ? serviceData[0].website_services_images.length - 1 : prevIndex - 1));
+    setCurrentIndex(prevIndex => {
+      const maxIndex = serviceData[0].website_services_images.length - 1;
+      if (prevIndex <= 0) return maxIndex; // Loop back to last image if at the first index
+      return prevIndex - 1;
+    });
   };
-
   useEffect(() => {
     // Auto slide every 3 seconds
     const intervalId = setInterval(nextSlide, 3000);
@@ -32,33 +44,33 @@ const ServiceDetail = () => {
 
   useEffect(() => {
     setCurrentIndex(0)
+    setServiceData(website?.websiteServices.filter(card => card.website_services_title === id) || [])
   }, [id])
 
   return (
     <section className="ftco-section bg-half-light">
-      <div className="container">
-        <div className="row justify-content-center pb-2">
-          <div className="col-md-8 text-center heading-section">
-            <span className="subheading">OUR SERVICES
-            </span>
-            <h2 className="mb-4">We Offer Services
-            </h2>
-          </div>
-        </div>
         {serviceData.length > 0 && (
-          <div className="mx-auto text-center heading-section">
-            <h3 className="mb-4">{serviceData[0]?.title}</h3>
-            <div className="row mt-5">
-            <div className="slider-container position-relative col-md-6">
-              <img src={ process.env.REACT_APP_DOC_URL + serviceData[0]?.website_services_images[currentIndex]?.url} className="img-fluid slider-image service-images" alt={`Slide ${currentIndex}`} crossOrigin="anonymous" />
-              <div onClick={handlePrev} className="btn slider-control prev-button">&#9664;</div>
-              <div onClick={handleNext} className="btn slider-control next-button">&#9654;</div>
+          <div className="container">
+            <div className="row justify-content-center pb-2">
+              <div className="col-md-8 text-center heading-section">
+                <span className="subheading">{serviceData[0].website_services_title}
+                </span>
+                <h2 className="mb-4">{serviceData[0].website_services_title2}
+                </h2>
+              </div>
             </div>
-            <p className="w-62 mx-auto col-md-6">{serviceData[0]?.website_services_description}</p>
-            </div>
+              <div className="mx-auto text-center heading-section">
+                <div className="row mt-5">
+                <div className="slider-container position-relative col-md-6">
+                  <img src={ process.env.REACT_APP_DOC_URL + serviceData[0]?.website_services_images[currentIndex]?.url} className="img-fluid slider-image service-images" alt={`Slide ${currentIndex}`} crossOrigin="anonymous" />
+                  <div onClick={handlePrev} className="btn slider-control prev-button">&#9664;</div>
+                  <div onClick={handleNext} className="btn slider-control next-button">&#9654;</div>
+                </div>
+                <p className="w-62 mx-auto col-md-6">{serviceData[0]?.website_services_description}</p>
+                </div>
+              </div>
           </div>
         )}
-      </div>
     </section>
   );
 };

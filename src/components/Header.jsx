@@ -111,10 +111,11 @@ const Header = () => {
             </div>
             <div className="col-sm justify-content-center d-flex mb-md-0 mb-2">
               <div className="social-media">
-                <p className="mb-0 d-flex">
+              <p className="mb-0 d-flex">
+                {website?.website_facebook && (
                   <Slide triggerOnce direction="left">
                     <a
-                      href={website?.website_facebook}
+                      href={website.website_facebook}
                       className="d-flex align-items-center justify-content-center"
                     >
                       <span className="fa fa-facebook">
@@ -122,9 +123,12 @@ const Header = () => {
                       </span>
                     </a>
                   </Slide>
+                )}
+
+                {website?.website_twitter && (
                   <Slide triggerOnce direction="right">
                     <a
-                      href={website?.website_twitter}
+                      href={website.website_twitter}
                       className="d-flex align-items-center justify-content-center"
                     >
                       <span className="fa fa-twitter">
@@ -132,9 +136,12 @@ const Header = () => {
                       </span>
                     </a>
                   </Slide>
+                )}
+
+                {website?.website_instagram && (
                   <Slide triggerOnce direction="up">
                     <a
-                      href={website?.website_instagram}
+                      href={website.website_instagram}
                       className="d-flex align-items-center justify-content-center"
                     >
                       <span className="fa fa-instagram">
@@ -142,9 +149,12 @@ const Header = () => {
                       </span>
                     </a>
                   </Slide>
+                )}
+
+                {website?.website_youtube && (
                   <Slide triggerOnce direction="up">
                     <a
-                      href={website?.website_youtube}
+                      href={website.website_youtube}
                       className="d-flex align-items-center justify-content-center"
                     >
                       <span className="fa fa-youtube">
@@ -152,8 +162,22 @@ const Header = () => {
                       </span>
                     </a>
                   </Slide>
-                  {/* <Slide triggerOnce direction='down'><a href="#" className="d-flex align-items-center justify-content-center"><span className="fa fa-dribbble"><i className="sr-only">Dribbble</i></span></a></Slide> */}
-                </p>
+                )}
+
+                {website?.website_linkedin && (
+                  <Slide triggerOnce direction="left">
+                    <a
+                      href={website.website_linkedin}
+                      className="d-flex align-items-center justify-content-center"
+                    >
+                      <span className="fa fa-linkedin">
+                        <i className="sr-only">LinkedIn</i>
+                      </span>
+                    </a>
+                  </Slide>
+                )}
+              </p>
+
               </div>
             </div>
             <div className="col-sm-12 col-md-6 col-lg-7 d-flex topper align-items-center text-lg-right justify-content-end">
