@@ -84,7 +84,7 @@ const Footer = () => {
               <h2 className="ftco-heading-2">Services</h2>
               <ul className="list-unstyled">
                 {Array.isArray(website?.websiteServices) && website?.websiteServices?.map(v => {
-                   return <li><a href={`/services/${v?.website_services_title}`}><span className="fa fa-chevron-right mr-2"></span>{v?.website_services_title}</a></li>
+                   return <li><Link to={`/services/${v?.website_services_title}`}><span className="fa fa-chevron-right mr-2"></span>{v?.website_services_title}</Link></li>
                 })}
               </ul>
             </div>

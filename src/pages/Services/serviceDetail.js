@@ -45,7 +45,7 @@ const ServiceDetail = () => {
   useEffect(() => {
     setCurrentIndex(0)
     setServiceData(website?.websiteServices.filter(card => card.website_services_title === id) || [])
-  }, [id])
+  }, [id, website])
 
   return (
     <section className="ftco-section bg-half-light">
