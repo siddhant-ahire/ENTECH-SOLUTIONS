@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="col-lg col-md-6">
             <div className="ftco-footer-widget">
               <h2 className="ftco-heading-2 d-flex align-items-center">About</h2>
-              <p>{website?.websiteFooter?.website_footer_about_text} <br></br> {website?.websiteFooter?.website_footer_about_text2}</p>
+              <p>{website?.websiteFooter?.website_footer_title} <br></br> {website?.websiteFooter?.website_footer_title2}</p>
               <ul className="ftco-footer-social list-unstyled mt-4">
                 {website?.websiteFooter?.website_footer_twitter && (
                   <li>
