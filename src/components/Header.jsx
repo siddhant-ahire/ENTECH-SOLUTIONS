@@ -177,18 +177,6 @@ const Header = () => {
                   </Slide>
                 )}
 
-                {website?.website_linkedin && (
-                  <Slide triggerOnce direction="left">
-                    <a
-                      href={website.website_linkedin}
-                      className="d-flex align-items-center justify-content-center"
-                    >
-                      <span className="fa fa-linkedin">
-                        <i className="sr-only">LinkedIn</i>
-                      </span>
-                    </a>
-                  </Slide>
-                )}
               </p>
 
               </div>
