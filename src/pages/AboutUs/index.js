@@ -26,7 +26,7 @@ const Index = () => {
           <h2 className="text-center mb-4">{website?.websiteAboutUs?.website_about_us_title2}</h2>
           <Row>
             <Col md={6} className="d-flex justify-content-center align-items-center mb-4 mb-md-0">
-              <img src={`${process.env.REACT_APP_DOC_URL}${website?.websiteAboutUs?.website_about_us_img}`} className="img-fluid rounded shadow-lg" alt="About Us" crossOrigin='anonymous' />
+              <img src={`${website?.websiteAboutUs?.website_about_us_img}`} className="img-fluid rounded shadow-lg" alt="About Us" crossOrigin='anonymous' />
             </Col>
             <Col md={6} className="d-flex flex-column justify-content-center">
               <Slide direction="right" triggerOnce>

@@ -14,7 +14,7 @@ const HomeCarousel = () => {
   useEffect(() => {
     if (website?.website_banner_images) {
       const imageUrls = website.website_banner_images.map(
-        (image) => `${process.env.REACT_APP_DOC_URL}${image.url}`
+        (image) => `${image}`
       );
       setImages(imageUrls);
     }

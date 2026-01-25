@@ -44,7 +44,7 @@ const HomeAboutUs = () => {
             <div className="img w-100 about-bg-image">
               {/* Replace backgroundImage with an <img> tag */}
               <img
-                src={`${process.env.REACT_APP_DOC_URL}${website?.website_banner_about_us_img}`}
+                src={`${website?.website_banner_about_us_img}`}
                 alt="About Us"
                 className="img-fluid"
                 style={{ width: '100%', height: 'auto' }}

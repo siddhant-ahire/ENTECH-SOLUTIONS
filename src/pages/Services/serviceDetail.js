@@ -62,7 +62,7 @@ const ServiceDetail = () => {
               <div className="mx-auto text-center heading-section">
                 <div className="row mt-5">
                 <div className="slider-container position-relative col-md-6">
-                  <img src={ process.env.REACT_APP_DOC_URL + serviceData[0]?.website_services_images[currentIndex]?.url} className="img-fluid slider-image service-images" alt={`Slide ${currentIndex}`} crossOrigin="anonymous" />
+                  <img src={serviceData[0]?.website_services_images[currentIndex]} className="img-fluid slider-image service-images" alt={`Slide ${currentIndex}`} crossOrigin="anonymous" />
                   <div onClick={handlePrev} className="btn slider-control prev-button">&#9664;</div>
                   <div onClick={handleNext} className="btn slider-control next-button">&#9654;</div>
                 </div>

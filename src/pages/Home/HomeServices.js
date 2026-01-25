@@ -37,7 +37,7 @@ const HomeServices = () => {
         <div className="row">
         {Array.isArray(website?.websiteServices) && website.websiteServices?.filter(service => service?.website_services_show_on_homepage).map((item) => (
           <ServiceItem2 
-          backgroundUrl={Array.isArray(item?.website_services_images) && `${process.env.REACT_APP_DOC_URL}${item?.website_services_images[0]?.url}`}
+          backgroundUrl={Array.isArray(item?.website_services_images) && `${item?.website_services_images[0]}`}
           icon="flaticon-architect" 
           title={item.website_services_title}
           description={item.website_services_description}

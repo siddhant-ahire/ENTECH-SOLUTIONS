@@ -23,7 +23,7 @@ const Index = () => {
           <div className="col-sm-12 col-md-4 col-lg-3 mb-4" key={client?.website_clients_id}>
               <Bounce  >
                 <div className="card">
-                  <img src={ process.env.REACT_APP_DOC_URL + client?.website_clients_image} className="card-img-top rounded" alt={client?.website_clients_title} crossOrigin='anonymous' />
+                  <img src={client?.website_clients_image} className="card-img-top rounded" alt={client?.website_clients_title} crossOrigin='anonymous' />
                   {/* <div className="card-body">
                     <h5 className="card-title">{client.name}</h5>
                   </div> */}

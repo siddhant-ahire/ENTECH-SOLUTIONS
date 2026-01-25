@@ -204,7 +204,7 @@ const Header = () => {
               <Link className="navbar-brand d-flex align-items-center" to={"/"}>
                 <Slide triggerOnce direction="left">
                   <img
-                    src={`${process.env.REACT_APP_DOC_URL}${website?.website_logo}`}
+                    src={`${website?.website_logo}`}
                     width={120}
                     height={105}
                     crossOrigin="anonymous"

@@ -39,10 +39,10 @@ const HomeProjects = () => {
           {Array.isArray(website?.websiteProjects)   && website.websiteProjects?.filter(project => project?.website_projects_show_on_homepage).map((project, index) => (
             <Project 
             key={index} 
-            imageUrl={Array.isArray(project?.website_projects_images) && `${process.env.REACT_APP_DOC_URL}${project?.website_projects_images[0]?.url}`} 
+            imageUrl={Array.isArray(project?.website_projects_images) && `${project?.website_projects_images[0]}`} 
             title={project?.website_projects_title} 
             location={project?.website_projects_id} 
-            imageUrls={Array.isArray(project?.website_projects_images) && project?.website_projects_images.map(image => `${process.env.REACT_APP_DOC_URL}${image.url}`)} />
+            imageUrls={Array.isArray(project?.website_projects_images) && project?.website_projects_images.map(image => `${image}`)} />
           ))}
         </div>
       </div>

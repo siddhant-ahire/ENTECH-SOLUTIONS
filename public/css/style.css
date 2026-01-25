@@ -9126,7 +9126,7 @@ textarea.form-control {
     right: 0;
     height: 50%;
     content: '';
-    background: #f3f5f6;
+    /* background: #f3f5f6; */
     z-index: -1; }
 
 .project {
