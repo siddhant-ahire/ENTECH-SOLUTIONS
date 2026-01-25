@@ -17,7 +17,7 @@ function convertWebsiteData(raw) {
     website_facebook: raw.website?.website_facebook || "",
     website_twitter: raw.website?.website_twitter || "",
     website_youtube: raw.website?.website_youtube || "",
-
+    website_linkedin: raw.website?.website_linkedin || "",
     website_phone_number: raw.website?.website_phone_number || "",
     website_address: raw.website?.website_address || "",
     website_address_lat_long: raw.website?.website_address_lat_long || "",
